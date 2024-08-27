@@ -65,13 +65,6 @@
       <description>Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.&#xA;Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Access Resources Directly from Off-site with Key-Based SSH</title>
       <link>http://localhost:1313/docs/labcomputingsite/care/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -105,6 +98,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/labcomputingsite/care/care/</guid>
       <description>CARE Installation Guide # Overview # The Content-Aware image REstoration (CARE) package is a Python-based routine for data augmentation and image restoration. The following steps outline the installation process and how to set up your environment for running CARE on the lab&amp;rsquo;s GPU machines.&#xA;Installation Steps # Create a Working Directory:&#xA;Open your terminal and create a new folder for CARE.&#xA;cd ~ mkdir care cd care Create and Activate a Conda Environment:</description>
+    </item>
+    <item>
+      <title>LLSM</title>
+      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</guid>
+      <description>4. LLSM / AO-LLS (MOSAIC) Deskew # When images are acquired using the Lattice Light Sheet Microscope (LLSM) or the Adaptive Optics - LLS (AO-LLS), from the Multimodal Optical Scope with Advanced Imaging Correction MOSAIC microscope, the orientation of the images are tilted in relation to the sample coverslip. In both microscopes, the excitation (EO) and detection (DO) objectives are at 30 and 60 degree angle towards the sample coverslip, respectively.</description>
     </item>
     <item>
       <title>Neuroglancer</title>
