@@ -14,6 +14,4 @@ Cryogenic electron tomography (cryo-ET) has rapidly advanced as a high-resolutio
 
 [Twitter Link](https://x.com/KirchhausenLab/status/1813651584427184490)
 
-![Cryosamba](/cryosamba.png)
-
 [Bio Archive Link](https://www.biorxiv.org/content/10.1101/2024.07.11.603117v1)
