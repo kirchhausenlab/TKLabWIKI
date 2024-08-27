@@ -66,9 +66,9 @@
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/docs/labcomputingsite/references/references/</link>
+      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/references/references/</guid>
+      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</guid>
       <description></description>
     </item>
     <item>
@@ -119,6 +119,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/labcomputingsite/tracking/post-tracking/</guid>
       <description>7. Post-tracking Processing # Introduction # In this section, we provide a list of codes developed for post-tracking analysis. The following procedures outline how to back up data from the scratch directory to /nfs/datasync4 and various post-processing techniques applied to the tracked data.&#xA;Data Backup After Processing # Name of the code: transfer_from_scratch_to_datasync.m&#xA;Once the data collected by the LLSMs has been deskewed and stored temporarily on /datasync4/tklab-llsm or /datasync4/AO-llsm, users can begin their processing, which includes detection, tracking, and post-tracking analysis.</description>
+    </item>
+    <item>
+      <title>References</title>
+      <link>http://localhost:1313/docs/labcomputingsite/references/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/references/references/</guid>
+      <description>References # Jaqaman, K., Loerke, D., Mettlen, M. et al. (2008). Robust single-particle tracking in live-cell time-lapse sequences. Nature Methods, 5, 695–702. https://doi.org/10.1038/nmeth.1237&#xA;François Aguet, Costin N. Antonescu, Marcel Mettlen, Sandra L. Schmid, Gaudenz Danuser (2013). Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint. Developmental Cell. https://doi.org/10.1016/j.devcel.2013.06.019&#xA;Roudot, Philippe, Wesley R Legant, Qiongjing Zou, Kevin M Dean, Erik S Welf, Ana F David, Daniel W Gerlich, Reto Fiolka, Eric Betzig, Gaudenz Danuser.</description>
     </item>
     <item>
       <title>SBGrid Wiki</title>
