@@ -2,5 +2,3 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'hugo-book'
-relativeURLs = true
-uglyURLs = true

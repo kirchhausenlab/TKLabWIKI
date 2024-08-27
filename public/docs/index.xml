@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on My New Hugo Site</title>
-    <link>http://localhost:1313/docs.html</link>
+    <link>http://localhost:1313/docs/</link>
     <description>Recent content in Docs on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
