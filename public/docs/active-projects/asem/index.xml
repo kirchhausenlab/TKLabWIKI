@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/docs/active-projects/asem/</link>
+    <link>http://localhost:51862/docs/active-projects/asem/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/active-projects/asem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51862/docs/active-projects/asem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASEM</title>
-      <link>http://localhost:1313/docs/active-projects/asem/project/</link>
+      <link>http://localhost:51862/docs/active-projects/asem/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/active-projects/asem/project/</guid>
+      <guid>http://localhost:51862/docs/active-projects/asem/project/</guid>
       <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
     </item>
   </channel>
