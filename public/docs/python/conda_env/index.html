@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Using Conda Environment # Explanation # Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.
+Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/python/conda_env/">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Using Conda Environment">
+  <meta property="og:description" content="Using Conda Environment # Explanation # Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.
+Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-08-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-15T00:00:00+00:00">
+<title>Using Conda Environment | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/python/conda_env/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.b5e451f80d93bc3f1f518b9fb9dc97a4b3da5925dcbb23f45f4a4f7ace43f980.js" integrity="sha256-teRR&#43;A2TvD8fUYufudyXpLPaWSXcuyP0X0pPes5D&#43;YA=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Active Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a96e0855703b9afc254b1c8447ed29b5" class="toggle"  />
+    <label for="section-a96e0855703b9afc254b1c8447ed29b5" class="flex justify-between">
+      <a role="button" class="">Asem</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active-projects/asem/project/" class="">ASEM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a78baf401048783b4b14a708b67f7145" class="toggle"  />
+    <label for="section-a78baf401048783b4b14a708b67f7145" class="flex justify-between">
+      <a role="button" class="">Cryosamba</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active-projects/cryosamba/paper/" class="">BioArchive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active-projects/cryosamba/project/" class="">CryoSamba Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active-projects/cryosamba/advanced/" class="">From Scratch(Advanced)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-06dfe6d05518a90614b0b8737b771aca" class="toggle"  />
+    <label for="section-06dfe6d05518a90614b0b8737b771aca" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa71f318b3309fa9d5b96fe96590e2c6" class="toggle"  />
+    <label for="section-fa71f318b3309fa9d5b96fe96590e2c6" class="flex justify-between">
+      <a role="button" class="">Image Recognition</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Git Hub</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/github/github/" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Nvidia Cuda</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/nvidia-cuda/deeplearningsetup/" class="">NVIDIA GPU and CUDA Setup Guide</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Python</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/production_poetry/" class="">Poetry: Python Dependency Management Made Easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/conda_env/" class="active">Using Conda Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/python-virtual-environment/" class="">Using Python Without Breaking Your Local Machine!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Lab Computing Site</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/labcomputingsite/" class="">Lab Computing Site</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Sbgrid Wiki</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/sbgrid_wiki/sbgrid/" class="">SBGrid Wiki</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Using Conda Environment</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#using-conda-environment">Using Conda Environment</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing-conda">Installing Conda</a></li>
+    <li><a href="#install-miniconda-for-different-os">Install Miniconda for different OS</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#creating-a-conda-environment">Creating a Conda Environment</a></li>
+    <li><a href="#activating-a-conda-environment">Activating a Conda Environment</a></li>
+    <li><a href="#installing-packages-in-a-conda-environment">Installing Packages in a Conda Environment</a></li>
+    <li><a href="#listing-conda-environments">Listing Conda Environments</a></li>
+    <li><a href="#deactivating-a-conda-environment">Deactivating a Conda Environment</a></li>
+    <li><a href="#removing-a-conda-environment">Removing a Conda Environment</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="using-conda-environment">
+  Using Conda Environment
+  <a class="anchor" href="#using-conda-environment">#</a>
+</h2>
+<h3 id="explanation">
+  Explanation
+  <a class="anchor" href="#explanation">#</a>
+</h3>
+<p>Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.</p>
+<p>Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts. Conda also provides a package manager that makes it easy to install, update, and remove packages within an environment.</p>
+<p>Conda is a more powerful and flexible tool compared to Python&rsquo;s built-in <code>venv</code> module. It supports multiple programming languages, not just Python, and can manage both Python and non-Python packages. Conda also provides pre-built packages for many scientific computing libraries, making it a popular choice for data science and machine learning projects.</p>
+<h2 id="installing-conda">
+  Installing Conda
+  <a class="anchor" href="#installing-conda">#</a>
+</h2>
+<p>To use Conda, you first need to install it on your system. Follow these steps to install Conda:</p>
+<ol>
+<li>Visit the <a href="https://docs.conda.io/en/latest/miniconda.html">Conda website</a> and download the appropriate installer for your operating system.</li>
+<li>Run the installer and follow the instructions to complete the installation process.</li>
+</ol>
+<h2 id="install-miniconda-for-different-os">
+  Install Miniconda for different OS
+  <a class="anchor" href="#install-miniconda-for-different-os">#</a>
+</h2>
+<ul>
+<li>
+<h1 id="windows">
+  Windows
+  <a class="anchor" href="#windows">#</a>
+</h1>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>(New-Object Net.WebClient).DownloadFile(<span style="color:#e6db74">&#39;https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe&#39;</span>, <span style="color:#e6db74">&#39;Miniconda3-latest-Windows-x86_64.exe&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;start Miniconda3-latest-Windows-x86_64.exe /InstallationType=JustMe /RegisterPython=0 /S /D=C:\Miniconda3&#34;</span>
+</span></span></code></pre></div><ul>
+<li>
+<h1 id="mac">
+  Mac
+  <a class="anchor" href="#mac">#</a>
+</h1>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+</span></span><span style="display:flex;"><span>chmod +x Miniconda3-latest-MacOSX-x86_64.sh
+</span></span><span style="display:flex;"><span>bash Miniconda3-latest-MacOSX-x86_64.sh
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">$(</span>HOME<span style="color:#66d9ef">)</span>/miniconda3/bin/conda init bash
+</span></span><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div><ul>
+<li>
+<h1 id="linux">
+  Linux
+  <a class="anchor" href="#linux">#</a>
+</h1>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span></span><span style="display:flex;"><span>chmod +x Miniconda3-latest-Linux-x86_64.sh
+</span></span><span style="display:flex;"><span>bash Miniconda3-latest-Linux-x86_64.sh
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">$(</span>HOME<span style="color:#66d9ef">)</span>/miniconda3/bin/conda init bash
+</span></span><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div><h2 id="creating-a-conda-environment">
+  Creating a Conda Environment
+  <a class="anchor" href="#creating-a-conda-environment">#</a>
+</h2>
+<p>Once Conda is installed, you can create a new environment using the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda create --name myenv
+</span></span></code></pre></div><p>Replace <code>myenv</code> with the desired name for your environment. Conda will create a new environment with the specified name.</p>
+<h2 id="activating-a-conda-environment">
+  Activating a Conda Environment
+  <a class="anchor" href="#activating-a-conda-environment">#</a>
+</h2>
+<p>To activate a Conda environment, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda activate myenv
+</span></span></code></pre></div><p>Replace <code>myenv</code> with the name of the environment you want to activate. Once activated, any packages you install or commands you run will be isolated within this environment.</p>
+<h2 id="installing-packages-in-a-conda-environment">
+  Installing Packages in a Conda Environment
+  <a class="anchor" href="#installing-packages-in-a-conda-environment">#</a>
+</h2>
+<p>To install packages in a Conda environment, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda install package_name
+</span></span></code></pre></div><p>Replace <code>package_name</code> with the name of the package you want to install. Conda will automatically resolve dependencies and install the specified package in the active environment.</p>
+<h2 id="listing-conda-environments">
+  Listing Conda Environments
+  <a class="anchor" href="#listing-conda-environments">#</a>
+</h2>
+<p>To list all the Conda environments available on your system, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda env list
+</span></span></code></pre></div><p>This will display a list of all the environments along with their paths.</p>
+<h2 id="deactivating-a-conda-environment">
+  Deactivating a Conda Environment
+  <a class="anchor" href="#deactivating-a-conda-environment">#</a>
+</h2>
+<p>To deactivate the currently active Conda environment, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda deactivate
+</span></span></code></pre></div><p>This will return you to the base environment.</p>
+<h2 id="removing-a-conda-environment">
+  Removing a Conda Environment
+  <a class="anchor" href="#removing-a-conda-environment">#</a>
+</h2>
+<p>To remove a Conda environment, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>conda env remove --name myenv
+</span></span></code></pre></div><p>Replace <code>myenv</code> with the name of the environment you want to remove. Conda will delete the specified environment and all its associated packages.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#using-conda-environment">Using Conda Environment</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+      </ul>
+    </li>
+    <li><a href="#installing-conda">Installing Conda</a></li>
+    <li><a href="#install-miniconda-for-different-os">Install Miniconda for different OS</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#creating-a-conda-environment">Creating a Conda Environment</a></li>
+    <li><a href="#activating-a-conda-environment">Activating a Conda Environment</a></li>
+    <li><a href="#installing-packages-in-a-conda-environment">Installing Packages in a Conda Environment</a></li>
+    <li><a href="#listing-conda-environments">Listing Conda Environments</a></li>
+    <li><a href="#deactivating-a-conda-environment">Deactivating a Conda Environment</a></li>
+    <li><a href="#removing-a-conda-environment">Removing a Conda Environment</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

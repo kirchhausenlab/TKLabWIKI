@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/docs/nvidia-cuda/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/nvidia-cuda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA GPU and CUDA Setup Guide</title>
+      <link>http://localhost:1313/docs/nvidia-cuda/deeplearningsetup/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/nvidia-cuda/deeplearningsetup/</guid>
+      <description>Verifying NVIDIA Hardware and CUDA Installation # Check NVIDIA GPU # First, let&amp;rsquo;s verify if your system recognizes the NVIDIA GPU:&#xA;Open a terminal and run:&#xA;lspci | grep -i nvidia This should display information about your NVIDIA GPU.&#xA;Right-click on the Windows Start button and select &amp;ldquo;Device Manager&amp;rdquo;&#xA;Expand the &amp;ldquo;Display adapters&amp;rdquo; section&#xA;You should see your NVIDIA GPU listed here Recent Macs don&amp;rsquo;t use NVIDIA GPUs. For older Macs:</description>
+    </item>
+  </channel>
+</rss>
