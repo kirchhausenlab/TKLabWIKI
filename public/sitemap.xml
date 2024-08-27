@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:51862/docs/active-projects/asem/</loc>
+    <loc>http://localhost:1313/docs/active-projects/asem.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/cryosamba/</loc>
+    <loc>http://localhost:1313/docs/active-projects/cryosamba.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/care/</loc>
+    <loc>http://localhost:1313/docs/active-projects/care.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/image-recognition/</loc>
+    <loc>http://localhost:1313/docs/active-projects/image-recognition.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/</loc>
+    <loc>http://localhost:1313/docs/active-projects.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/github/</loc>
+    <loc>http://localhost:1313/docs/github.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/nvidia-cuda/</loc>
+    <loc>http://localhost:1313/docs/nvidia-cuda.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/python/</loc>
+    <loc>http://localhost:1313/docs/python.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/asem/project/</loc>
+    <loc>http://localhost:1313/docs/active-projects/asem/project.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/cryosamba/paper/</loc>
+    <loc>http://localhost:1313/docs/active-projects/cryosamba/paper.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/cryosamba/project/</loc>
+    <loc>http://localhost:1313/docs/active-projects/cryosamba/project.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/</loc>
+    <loc>http://localhost:1313/docs.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/github/github/</loc>
+    <loc>http://localhost:1313/docs/github/github.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/nvidia-cuda/deeplearningsetup/</loc>
+    <loc>http://localhost:1313/docs/nvidia-cuda/deeplearningsetup.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/python/production_poetry/</loc>
+    <loc>http://localhost:1313/docs/python/production_poetry.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/python/conda_env/</loc>
+    <loc>http://localhost:1313/docs/python/conda_env.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/python/python-virtual-environment/</loc>
+    <loc>http://localhost:1313/docs/python/python-virtual-environment.html</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:51862/docs/labcomputingsite/</loc>
+    <loc>http://localhost:1313/docs/labcomputingsite.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/sbgrid_wiki/</loc>
+    <loc>http://localhost:1313/docs/sbgrid_wiki.html</loc>
   </url><url>
-    <loc>http://localhost:51862/categories/</loc>
+    <loc>http://localhost:1313/categories.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/active-projects/cryosamba/advanced/</loc>
+    <loc>http://localhost:1313/docs/active-projects/cryosamba/advanced.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/labcomputingsite/labcomputingsite/</loc>
+    <loc>http://localhost:1313/docs/labcomputingsite/labcomputingsite.html</loc>
   </url><url>
-    <loc>http://localhost:51862/docs/sbgrid_wiki/sbgrid/</loc>
+    <loc>http://localhost:1313/docs/sbgrid_wiki/sbgrid.html</loc>
   </url><url>
-    <loc>http://localhost:51862/tags/</loc>
+    <loc>http://localhost:1313/tags.html</loc>
   </url>
 </urlset>

@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in
+Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
+Please cite the publication if you are using this code in your research.
+Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.
+Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/active-projects/asem/project.html">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="ASEM">
+  <meta property="og:description" content="Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in
+Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
+Please cite the publication if you are using this code in your research.
+Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.
+Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-08-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-15T00:00:00+00:00">
+<title>ASEM | My New Hugo Site</title>
+<link rel="manifest" href="../../../manifest.json">
+<link rel="icon" href="../../../favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/active-projects/asem/project.html">
+<link rel="stylesheet" href="../../../book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="../../../fuse.min.js"></script>
+  <script defer src="../../../en.search.min.1623e1f409ca037ffad5a4b5c0d671bf5429b35e854dd625f74fb5951d383ce2.js" integrity="sha256-FiPh9AnKA3/61aS1wNZxv1Qps16FTdYl90&#43;1lR04POI=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../../"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Active Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a96e0855703b9afc254b1c8447ed29b5" class="toggle" checked />
+    <label for="section-a96e0855703b9afc254b1c8447ed29b5" class="flex justify-between">
+      <a role="button" class="">Asem</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/asem/project.html" class="active">ASEM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a78baf401048783b4b14a708b67f7145" class="toggle"  />
+    <label for="section-a78baf401048783b4b14a708b67f7145" class="flex justify-between">
+      <a role="button" class="">Cryosamba</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/paper.html" class="">BioArchive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/project.html" class="">CryoSamba Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/advanced.html" class="">From Scratch(Advanced)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-06dfe6d05518a90614b0b8737b771aca" class="toggle"  />
+    <label for="section-06dfe6d05518a90614b0b8737b771aca" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa71f318b3309fa9d5b96fe96590e2c6" class="toggle"  />
+    <label for="section-fa71f318b3309fa9d5b96fe96590e2c6" class="flex justify-between">
+      <a role="button" class="">Image Recognition</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Git Hub</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/github/github.html" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Nvidia Cuda</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/nvidia-cuda/deeplearningsetup.html" class="">NVIDIA GPU and CUDA Setup Guide</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Python</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/production_poetry.html" class="">Poetry: Python Dependency Management Made Easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/conda_env.html" class="">Using Conda Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/python-virtual-environment.html" class="">Using Python Without Breaking Your Local Machine!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Lab Computing Site</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/labcomputingsite/labcomputingsite.html" class="">Lab Computing Site</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Sbgrid Wiki</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/sbgrid_wiki/sbgrid.html" class="">SBGrid Wiki</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>ASEM</strong>
+
+  <label for="toc-control">
+    
+    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#optional-download-our-data">Optional: Download our data</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prepare-your-own-data-for-prediction">Prepare your own data for prediction</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prediction">Prediction</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">Prepare your own ground truth annotations for fine-tuning or training</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#fine-tuning">Fine-Tuning</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#training">Training</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="insainsutomated-inssinsegmentation-of-cellular-substructures-in-inseinslectron-insminsicroscopy-asem">
+  <!-- raw HTML omitted -->A<!-- raw HTML omitted -->utomated <!-- raw HTML omitted -->S<!-- raw HTML omitted -->egmentation of cellular substructures in <!-- raw HTML omitted -->E<!-- raw HTML omitted -->lectron <!-- raw HTML omitted -->M<!-- raw HTML omitted -->icroscopy (ASEM)
+  <a class="anchor" href="#insainsutomated-inssinsegmentation-of-cellular-substructures-in-inseinslectron-insminsicroscopy-asem">#</a>
+</h1>
+<p>This repository contains the segmentation pipeline described in</p>
+<blockquote>
+<p>Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.<!-- raw HTML omitted --><a href="https://rupress.org/jcb/article/222/2/e202208005/213736/Deep-neural-network-automated-segmentation-of"><em>Deep neural network automated segmentation of cellular structures in volume electron microscopy</em></a>,<!-- raw HTML omitted -->Journal of Cell Biology, 2022.</p>
+</blockquote>
+<p>Please cite the publication if you are using this code in your research.</p>
+<p>Our semi-automated annotation tool from the same publication is available at <a href="https://github.com/kirchhausenlab/gc_segment">https://github.com/kirchhausenlab/gc_segment</a>.</p>
+<h2 id="table-of-contents">
+  Table of Contents
+  <a class="anchor" href="#table-of-contents">#</a>
+</h2>
+<ul>
+<li><a href="#Installation">Installation</a></li>
+<li><a href="#Optional-Download-our-data">Optional: Download our data</a></li>
+<li><a href="#Prepare-your-own-data-for-prediction">Prepare your own data for prediction</a></li>
+<li><a href="#Prediction">Prediction</a></li>
+<li><a href="#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">Prepare your own ground truth annotations for fine-tuning or training</a></li>
+<li><a href="#Fine-tuning">Fine-Tuning</a></li>
+<li><a href="#Training">Training</a></li>
+</ul>
+<h2 id="installation">
+  Installation
+  <a class="anchor" href="#installation">#</a>
+</h2>
+<p>This package is written for machines with either a Linux or a MacOS operating system.</p>
+<blockquote>
+<p>This README was written to work with the <code>bash</code> console. If you want to use <code>zsh</code> (default on newer versions of MacOS) or any other console, please make sure that you adapt things accordingly.</p>
+</blockquote>
+<blockquote>
+<p>Newer versions of MacOS (Catalina or newer): the following commands work correctly if you run the Terminal under Rosetta.
+In Finder, go to <code>Applications/Utilities</code>, right click on <code>Terminal</code>, select <code>Get Info</code>, tick <code>Open using Rosetta</code>.</p>
+</blockquote>
+<h4 id="1-install-anaconda-for-creating-a-conda-python-environment">
+  1. Install anaconda for creating a conda python environment.
+  <a class="anchor" href="#1-install-anaconda-for-creating-a-conda-python-environment">#</a>
+</h4>
+<p>Open a terminal window and download anaconda.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span></span></code></pre></div><p>Optional: In case of permission issues, run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chmod +x Miniconda3-latest-Linux-x86_64.sh<span style="color:#e6db74">`</span>
+</span></span></code></pre></div><p>Install anaconda.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bash Miniconda3-latest-Linux-x86_64.sh
+</span></span></code></pre></div><p>Type <code>conda</code> to check whether the installation worked, if not try to reload your <code>.bashrc</code> file with
+<code>source ~/.bashrc</code>.</p>
+<h4 id="2-clone-the-main-repository">
+  2. Clone the main repository.
+  <a class="anchor" href="#2-clone-the-main-repository">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/kirchhausenlab/incasem.git ~/incasem
+</span></span></code></pre></div><h4 id="3-create-a-new-anaconda-python-environment">
+  3. Create a new anaconda python environment.
+  <a class="anchor" href="#3-create-a-new-anaconda-python-environment">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda create -n incasem --no-default-packages python<span style="color:#f92672">=</span>3.8
+</span></span></code></pre></div><h4 id="4-pip-install-the-incasem-package-contained-in-this-repository-into-the-environment">
+  4. Pip-install the incasem package contained in this repository into the environment.
+  <a class="anchor" href="#4-pip-install-the-incasem-package-contained-in-this-repository-into-the-environment">#</a>
+</h4>
+<p>Activate the new environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate incasem
+</span></span></code></pre></div><p>Install</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -e ./incasem
+</span></span></code></pre></div><h4 id="5-install-pytorch-as-outlined-herehttpspytorchorgget-startedlocally">
+  5. Install pytorch as outlined <a href="https://pytorch.org/get-started/locally/">here</a>.
+  <a class="anchor" href="#5-install-pytorch-as-outlined-herehttpspytorchorgget-startedlocally">#</a>
+</h4>
+<h4 id="6-install-our-neuroglancer-scripts">
+  6. Install our neuroglancer scripts
+  <a class="anchor" href="#6-install-our-neuroglancer-scripts">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install git+https://github.com/kirchhausenlab/funlib.show.neuroglancer.git@more_scripts_v2#egg<span style="color:#f92672">=</span>funlib.show.neuroglancer
+</span></span></code></pre></div><h4 id="7-set-up-the-experiment-tracking-databases-for-training-and-prediction">
+  7. Set up the experiment tracking databases for training and prediction
+  <a class="anchor" href="#7-set-up-the-experiment-tracking-databases-for-training-and-prediction">#</a>
+</h4>
+<ul>
+<li>
+<p>If not already installed on your system (check by running <code>mongod</code>), install <a href="https://docs.mongodb.com/manual/administration/install-community/">MongoDB</a>.</p>
+</li>
+<li>
+<p>Start up the MongoDB service (refer to <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#run-mongodb-community-edition">documentation</a>):</p>
+<ul>
+<li>on Ubuntu:
+<pre tabindex="0"><code>bash sudo service mongod start
+</code></pre></li>
+<li>on MacOS (assuming that you have installed mongodb via <code>homebrew</code>):
+<pre tabindex="0"><code>brew services start mongodb-community
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>Run</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem; python download_models.py
+</span></span></code></pre></div><h4 id="9-install-omniboard-for-viewing-the-experiment-databases">
+  9. Install Omniboard for viewing the experiment databases
+  <a class="anchor" href="#9-install-omniboard-for-viewing-the-experiment-databases">#</a>
+</h4>
+<p>Install Nodeenv.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install nodeenv
+</span></span></code></pre></div><p>Create a new node.js environment (and thereby install node.js, if not already installed).</p>
+<blockquote>
+<p>This may take a while.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~; nodeenv omniboard_environment
+</span></span></code></pre></div><p>Activate the environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source omniboard_environment/bin/activate
+</span></span></code></pre></div><p>Install <a href="https://vivekratnavel.github.io/omniboard/#/quick-start">omniboard</a>.</p>
+<blockquote>
+<p>This may take a while.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm install -g omniboard
+</span></span></code></pre></div><h2 id="optional-download-our-data">
+  Optional: Download our data
+  <a class="anchor" href="#optional-download-our-data">#</a>
+</h2>
+<p>The datasets in the publication are available in an <a href="https://open.quiltdata.com/b/asem-project/tree/datasets/">AWS bucket</a> and can be downloaded with the <a href="https://docs.quiltdata.com/api-reference/api">quilt3 API</a>.</p>
+<h4 id="1-download-an-example-dataset-from-the-aws-bucket-cell-6">
+  1. Download an example dataset from the AWS bucket: cell 6
+  <a class="anchor" href="#1-download-an-example-dataset-from-the-aws-bucket-cell-6">#</a>
+</h4>
+<p>Navigate to <code>~/incasem/data</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/data
+</span></span></code></pre></div><p>Open a python session and run the following lines.</p>
+<blockquote>
+<p>It may take a while until the download starts. Expected download speed is &gt;= 2MB/s.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> quilt3
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> quilt3<span style="color:#f92672">.</span>Bucket(<span style="color:#e6db74">&#34;s3://asem-project&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># download</span>
+</span></span><span style="display:flex;"><span>b<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">&#34;datasets/cell_6/cell_6_example.zarr/&#34;</span>, <span style="color:#e6db74">&#34;cell_6/cell_6.zarr/&#34;</span>)
+</span></span></code></pre></div><p>We provide all datasets as 2d <code>.tiff</code> images as well as in <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>, which is more suitable for deep learning on 3D images. Above we only downloaded the <code>.zarr</code> format.</p>
+<h4 id="2-explore-a-dataset">
+  2. Explore a dataset
+  <a class="anchor" href="#2-explore-a-dataset">#</a>
+</h4>
+<p>Example: Cell 6 raw electron microscopy data, Endoplasmic Reticulum prediction and corresponding Endoplasmic Reticulum ground-truth annotation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f cell_6/cell_6.zarr -d volumes/raw_equalized_0.02 volumes/predictions/er/segmentation volumes/labels/er
+</span></span></code></pre></div><p>Navigate to position <code>520, 1164, 2776</code> (z,y,x) to focus on the Endoplasmic Reticulum predictions. You can simply overwrite the coordinates on the top left to do so.</p>
+<p>If you are not familiar with inspecting 3D data with neuroglancer, you might want to have a look at this <a href="https://youtu.be/TwBTyWWnbxc?t=75">video tutorial</a>.</p>
+<blockquote>
+<p>Note: <code>neuroglancer</code> might not work in Safari. In this case, simply copy the link given by <code>neuroglancer</code> to Chrome or Firefox.</p>
+</blockquote>
+<h2 id="prepare-your-own-data-for-prediction">
+  Prepare your own data for prediction
+  <a class="anchor" href="#prepare-your-own-data-for-prediction">#</a>
+</h2>
+<p>We assume that the available 3d data is stored as a sequence of 2d <code>.tif</code> images in a directory.</p>
+<h4 id="0-copy-your-data-into-the-project-directory">
+  0. Copy your data into the project directory
+  <a class="anchor" href="#0-copy-your-data-into-the-project-directory">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp -r old/data/location ~/incasem/data/my_new_data
+</span></span></code></pre></div><h4 id="1-go-to-the-01_data_formatting-directory">
+  1. Go to the <code>01_data_formatting</code> directory
+  <a class="anchor" href="#1-go-to-the-01_data_formatting-directory">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/scripts/01_data_formatting
+</span></span></code></pre></div><h4 id="2-activate-the-python-environment">
+  2. Activate the python environment
+  <a class="anchor" href="#2-activate-the-python-environment">#</a>
+</h4>
+<blockquote>
+<p>In case you have not installed the python environment yet, refer to the <a href="#Installation">installation instructions</a>.</p>
+</blockquote>
+<p>Before running python scripts, activate the <code>incasem</code> environment</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate incasem
+</span></span></code></pre></div><h4 id="3-conversion-from-tiff-to-zarr-format">
+  3. Conversion from <code>TIFF</code> to <code>zarr</code> format
+  <a class="anchor" href="#3-conversion-from-tiff-to-zarr-format">#</a>
+</h4>
+<p>Convert the sequence of <code>.tif</code> images (3D stack) to <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 00_image_sequences_to_zarr.py -i ~/incasem/data/my_new_data -f ~/incasem/data/my_new_data.zarr
+</span></span></code></pre></div><blockquote>
+<p>To obtain documentation on how to use a script, run <code>python &lt;script_name&gt;.py -h</code>.</p>
+</blockquote>
+<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 01_image_sequences_to_zarr_with_dask.py -i ~/incasem/data/my_new_data -f ~/incasem/data/my_new_data.zarr -d volumes/raw --resolution <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><h4 id="4-equalize-intensity-histogram-of-the-data">
+  4. Equalize intensity histogram of the data
+  <a class="anchor" href="#4-equalize-intensity-histogram-of-the-data">#</a>
+</h4>
+<p>Equalize the raw data with <a href="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">CLAHE (Contrast limited adaptive histogram equalization)</a>. The default clip limit is <code>0.02</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 40_equalize_histogram.py -f ~/incasem/data/my_new_data.zarr -d volumes/raw -o volumes/raw_equalized_0.02
+</span></span></code></pre></div><h4 id="5-inspect-the-converted-data-with-neuroglancer">
+  5. Inspect the converted data with <code>neuroglancer</code>:
+  <a class="anchor" href="#5-inspect-the-converted-data-with-neuroglancer">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f ~/incasem/data/my_new_data.zarr -d /volumes/raw
+</span></span></code></pre></div><p>Refer to our <a href="#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
+<h2 id="prediction">
+  Prediction
+  <a class="anchor" href="#prediction">#</a>
+</h2>
+<h4 id="1-create-a-data-configuration-file">
+  1. Create a data configuration file
+  <a class="anchor" href="#1-create-a-data-configuration-file">#</a>
+</h4>
+<p>For running a prediction you need to create a configuration file in JSON format that specifies which data should be used.
+Here is an example, also available at <code>~/incasem/scripts/03_predict/data_configs/example_cell6.json</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Cell_6_example_roi_nickname&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_6/cell_6.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">926</span>, <span style="color:#ae81ff">2512</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">241</span>, <span style="color:#ae81ff">476</span>, <span style="color:#ae81ff">528</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>offset</code> and <code>shape</code> are specified in voxels and in <strong>z, y, x</strong> format. They have to outline a <em>region of interest</em> (ROI) that lies within the total available ROI of the dataset (as defined in <code>.zarray</code> and <code>.zattrs</code> files of each zarr volume).</p>
+<blockquote>
+<p>Note that the offset in each <code>.zattr</code> file is defined in nanometers, while the shape in <code>.zarray</code> is defined in voxels.</p>
+</blockquote>
+<p>We assume the data to be in <code>~/incasem/data</code>, as defined <a href="scripts/03_predict/config_prediction.yaml">here</a>.</p>
+<h4 id="2-choose-a-model">
+  2. Choose a model
+  <a class="anchor" href="#2-choose-a-model">#</a>
+</h4>
+<p>We provide the following pre-trained models:</p>
+<ul>
+<li>For FIB-SEM data prepared by chemical fixation, <code>5x5x5</code> nm<!-- raw HTML omitted -->3<!-- raw HTML omitted --> resolution:
+<ul>
+<li>Mitochondria (model ID <code>1847</code>)</li>
+<li>Golgi Apparatus (model ID <code>1837</code>)</li>
+<li>Endoplasmic Reticulum (model ID <code>1841</code>)</li>
+</ul>
+</li>
+<li>For FIB-SEM data prepared by high-pressure freezing, <code>4x4x4</code> nm<!-- raw HTML omitted -->3<!-- raw HTML omitted --> resolution:
+<ul>
+<li>Mitochondria (model ID <code>1675</code>)</li>
+<li>Endoplasmic Reticulum (model ID <code>1669</code>)</li>
+</ul>
+</li>
+<li>For FIB-SEM data prepared by high-pressure freezing, <code>5x5x5</code> nm<!-- raw HTML omitted -->3<!-- raw HTML omitted --> resolution:
+<ul>
+<li>Clathrin-Coated Pits (model ID <code>1986</code>)</li>
+<li>Nuclear Pores (model ID <code>2000</code>)</li>
+</ul>
+</li>
+</ul>
+<p>A checkpoint file for each of these models is stored in <code>~/incasem/models/pretrained_checkpoints/</code>.</p>
+<h5 id="optional-for-detailed-information-about-the-trained-modes-refer-to-the-database-downloaded-above">
+  Optional: For detailed information about the trained modes, refer to the database downloaded above:
+  <a class="anchor" href="#optional-for-detailed-information-about-the-trained-modes-refer-to-the-database-downloaded-above">#</a>
+</h5>
+<p>Activate the omniboard environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/omniboard_environment/bin/activate
+</span></span></code></pre></div><p>Run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>omniboard -m localhost:27017:incasem_trainings
+</span></span></code></pre></div><p>and paste <code>localhost:9000</code> into your browser.</p>
+<h4 id="3-run-the-prediction">
+  3. Run the prediction
+  <a class="anchor" href="#3-run-the-prediction">#</a>
+</h4>
+<p>Cell 6 has been prepared by chemical fixation and we will generate predictions for Endoplasmic Reticulum in this example, using model ID <code>1841</code>. In the prediction scripts folder,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/scripts/03_predict
+</span></span></code></pre></div><p>Run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python predict.py --run_id <span style="color:#ae81ff">1841</span> --name example_prediction_cell6_ER with config_prediction.yaml <span style="color:#e6db74">&#39;prediction.data=data_configs/example_cell6.json&#39;</span> <span style="color:#e6db74">&#39;prediction.checkpoint=../../models/pretrained_checkpoints/model_checkpoint_1841_er_CF.pt&#39;</span>
+</span></span></code></pre></div><p>Note that we need to specify which model to use twice:</p>
+<ul>
+<li><code>--run_id 1841</code> to load the appropriate settings from the models database.</li>
+<li><code>'prediction.checkpoint=../../models/pretrained_checkpoints/model_checkpoint_1841_er_CF.pt'</code> to pass the path to the checkpoint file.</li>
+</ul>
+<p>You can check the status of the prediction in omniboard:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>omniboard -m localhost:27017:incasem_predictions
+</span></span></code></pre></div><h4 id="optional">
+  Optional:
+  <a class="anchor" href="#optional">#</a>
+</h4>
+<p>If you have corresponding ground truth annotations, create a metric exclusion zone as <a href="#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">described below</a>. For the example of predicting Endoplasmic Reticulum in cell 6 from above, put the metric exclusion zone in <code>cell_6/cell_6.zarr/volumes/metric_masks/er</code> and adapt <code>data_configs/example_cell6.json</code> to:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Cell_6_example_roi_nickname&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_6/cell_6.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">926</span>, <span style="color:#ae81ff">2512</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">241</span>, <span style="color:#ae81ff">476</span>, <span style="color:#ae81ff">528</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metric_masks&#34;</span>: [<span style="color:#e6db74">&#34;volumes/metric_masks/er&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/er&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python predict.py --run_id <span style="color:#ae81ff">1841</span> --name example_prediction_cell6_ER_with_GT with config_prediction.yaml <span style="color:#e6db74">&#39;prediction.log_metrics=True&#39;</span> <span style="color:#e6db74">&#39;prediction.data=data_configs/example_cell6.json&#39;</span> <span style="color:#e6db74">&#39;prediction.checkpoint=../../models/pretrained_checkpoints/model_checkpoint_1841_er_CF.pt&#39;</span>
+</span></span></code></pre></div><p>, which will print an F1 score for the generated prediction given the ground truth annotations (<code>labels</code>).</p>
+<h4 id="4-visualize-the-prediction">
+  4. Visualize the prediction
+  <a class="anchor" href="#4-visualize-the-prediction">#</a>
+</h4>
+<p>Every prediction is stored with a unique identifier (increasing number). If the example above was your first prediction run, you will see a folder <code>~/incasem/data/cell_6/cell_6.zarr/volumes/predictions/train_1841/predict_0001/segmentation</code>. To inspect these predictions, together with the corresponding EM data and ground truth, use the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f ~/incasem/data/cell_6/cell_6.zarr -d volumes/raw_equalized_0.02 volumes/labels/er volumes/predictions/train_1841/predict_0001/segmentation
+</span></span></code></pre></div><h4 id="5-convert-the-prediction-to-tiff-format">
+  5. Convert the prediction to &lsquo;TIFF&rsquo; format
+  <a class="anchor" href="#5-convert-the-prediction-to-tiff-format">#</a>
+</h4>
+<p>Run <code>cd ~/incasem/scripts/04_postprocessing</code> to access the postprocessing scripts.</p>
+<p>Now adapt and execute the conversion command below. In this example command, we assume that we have used model ID <code>1841</code> to generate Endoplasmic Reticulum predictions for a subset of cell 6, and the automatically assigned prediction ID is <code>0001</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 20_convert_zarr_to_image_sequence.py --filename ~/incasem/data/cell_6/cell_6.zarr --datasets volumes/predictions/train_1841/predict_0001/segmentation --out_directory ~/incasem/data/cell_6 --out_datasets example_er_prediction
+</span></span></code></pre></div><p>You can open the resulting TIFF stack for example in ImageJ. Note that since we only made predictions on a subset of cell 6, the prediction TIFF stack is smaller than the raw data TIFF stack.</p>
+<h2 id="prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">
+  Prepare your own ground truth annotations for fine-tuning or training
+  <a class="anchor" href="#prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">#</a>
+</h2>
+<p>Example: Endoplasmic reticulum (ER) annotations.</p>
+<p>We assume that the available 3d pixelwise annotations are stored as a sequence of 2d <code>.tif</code> images in a directory and that the size of each <code>.tif</code> annotation image matches the size of the corresponding electron microscopy <code>.tif</code> image.</p>
+<p>Furthermore, we assume that you have already prepared the corresponding electron microscopy images as outlined <a href="#Prepare-your-own-data-for-prediction">above</a>.</p>
+<blockquote>
+<p>The minimal block size that our training pipeline is set up to process is <code>(204, 204, 204)</code> voxels.</p>
+</blockquote>
+<h4 id="0-copy-the-annotation-data-into-the-project-directory">
+  0. Copy the annotation data into the project directory
+  <a class="anchor" href="#0-copy-the-annotation-data-into-the-project-directory">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp -r old/annotations/location ~/incasem/data/my_new_er_annotations
+</span></span></code></pre></div><h4 id="1-go-to-the-01_data_formatting-directory-1">
+  1. Go to the <code>01_data_formatting</code> directory
+  <a class="anchor" href="#1-go-to-the-01_data_formatting-directory-1">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/scripts/01_data_formatting
+</span></span></code></pre></div><h4 id="2-activate-the-python-environment-1">
+  2. Activate the python environment
+  <a class="anchor" href="#2-activate-the-python-environment-1">#</a>
+</h4>
+<blockquote>
+<p>In case you have not installed the python environment yet, refer to the <a href="#Installation">installation instructions</a>.</p>
+</blockquote>
+<p>Before running python scripts, activate the <code>incasem</code> environment</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate incasem
+</span></span></code></pre></div><h4 id="3-conversion-from-tiff-to-zarr-format-1">
+  3. Conversion from <code>TIFF</code> to <code>zarr</code> format
+  <a class="anchor" href="#3-conversion-from-tiff-to-zarr-format-1">#</a>
+</h4>
+<p>Convert the sequence of <code>.tif</code> annotations (3D stack) to <a href="https://zarr.readthedocs.io/en/stable/">.<code>zarr</code> format</a>.
+In this example, we use</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 00_image_sequences_to_zarr.py -i ~/incasem/data/my_new_er_annotations -f ~/incasem/data/my_new_data.zarr -d volumes/labels/er --dtype uint32
+</span></span></code></pre></div><p>We assume the <code>.tif</code> file names are in the format <code>name_number.tif</code>, as encapsulated by the default regular expression <code>.*_(\d+).*\.tif$</code>. If you want to change it, add <code>-r your_regular_expression</code> to the line above.</p>
+<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 01_image_sequences_to_zarr_with_dask.py -i ~/incasem/data/my_new_er_annotations -f ~/incasem/data/my_new_data.zarr -d volumes/labels_er --resolution <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> --dtype uint32
+</span></span></code></pre></div><p>Inspect the converted data with <code>neuroglancer</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f ~/incasem/data/my_new_data.zarr -d volumes/raw volumes/labels/er
+</span></span></code></pre></div><p>Refer to our <a href="#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
+<p>If the position of the labels is wrong, you can correct the offset by directly editing the dataset attributes file on disk:</p>
+<pre tabindex="0"><code>cd ~/incasem/data/my_new_data.zarr/volumes/labels/er
+vim .zattrs
+</code></pre><p>In this file the offset is expressed in nanometers instead of voxels. So if the voxel size is <code>(5,5,5) nm</code>, you need to multiply the previous coordinates (z,y,x) by 5.</p>
+<h4 id="4-create-a-metric-exclusion-zone">
+  4. Create a metric exclusion zone
+  <a class="anchor" href="#4-create-a-metric-exclusion-zone">#</a>
+</h4>
+<p>We create a mask that will be used to calculate the F1 score for predictions, e.g. in the periodic validation during training.
+This mask, which we refer to as <em>exclusion zone</em>, simply sets the pixels at the object boundaries to 0, as we do not want that small errors close to the object boundaries affect the overall prediction score.</p>
+<p>We suggest the following exclusion zones in voxels:</p>
+<ul>
+<li>mito: 4 <code>--exclude_voxels_inwards 4 --exclude_voxels_outwards 4</code></li>
+<li>golgi: 2 <code>--exclude_voxels_inwards 2 --exclude_voxels_outwards 2</code></li>
+<li>ER: 2 <code>--exclude_voxels_inwards 2 --exclude_voxels_outwards 2</code></li>
+<li>NP (nuclear pores): 1 <code>--exclude_voxels_inwards 1 --exclude_voxels_outwards 1</code></li>
+<li>CCP (coated pits): 1 <code>--exclude_voxels_inwards 2 --exclude_voxels_outwards 2</code></li>
+</ul>
+<p>For our example with Endoplasmic Reticulum annotations, we run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 60_create_metric_mask.py -f ~/incasem/data/my_new_data.zarr -d volumes/labels/er --out_dataset volumes/metric_masks/er --exclude_voxels_inwards <span style="color:#ae81ff">2</span> --exclude_voxels_outwards <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><h2 id="fine-tuning">
+  Fine-Tuning
+  <a class="anchor" href="#fine-tuning">#</a>
+</h2>
+<p>If the prediction quality on a new target cell when using one of our pre-trained models is not satisfactory, you can finetune the model with a very small amount of ground truth from that target cell.</p>
+<p>This is an example based on our datasets, which are publicly available in <code>.zarr</code> format via Amazon Web Services.
+We will fine-tune the mitochondria model ID <code>1847</code>, which was trained on data from cells 1 and 2, with a small amount of additional data from cell 3.</p>
+<h4 id="0-download-training-data">
+  0. Download training data
+  <a class="anchor" href="#0-download-training-data">#</a>
+</h4>
+<p>If you haven&rsquo;t done so before, download <code>cell_3</code> from our published datasets as outlined in the section <a href="#Optional-Download-our-data"><em>Download our data</em></a>.</p>
+<h4 id="1-create-a-fine-tuning-data-configuration-file">
+  1. Create a fine-tuning data configuration file
+  <a class="anchor" href="#1-create-a-fine-tuning-data-configuration-file">#</a>
+</h4>
+<p>For fine-tuning a model you need to create a configuration file in <code>JSON</code> format that specifies which data should be used.
+Here is an example, also available at <code>~/incasem/scripts/02_train/data_configs/example_finetune_mito.json</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_3_finetune_mito&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_3/cell_3.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">700</span>, <span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">6200</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">250</span>, <span style="color:#ae81ff">250</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/mito&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Refer to the section <a href="#Training"><em>Training</em></a> for a detailed walk-through of such a configuration file.</p>
+<h4 id="2-launch-the-fine-tune-training">
+  2. Launch the fine-tune training
+  <a class="anchor" href="#2-launch-the-fine-tune-training">#</a>
+</h4>
+<p>In the training scripts folder,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/scripts/02_train
+</span></span></code></pre></div><p>run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python train.py --name example_finetune --start_from <span style="color:#ae81ff">1847</span> ~/incasem/models/pretrained_checkpoints/model_checkpoint_1847_mito_CF.pt with config_training.yaml training.data<span style="color:#f92672">=</span>data_configs/example_finetune_mito.json validation.data<span style="color:#f92672">=</span>data_configs/example_finetune_mito.json torch.device<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> training.iterations<span style="color:#f92672">=</span><span style="color:#ae81ff">15000</span>
+</span></span></code></pre></div><p>Note that since we do not have extra validation data on the target cell 3, we simply pass the training data configuration file to define a dummy validation dataset.</p>
+<h4 id="3-observe-the-training">
+  3. Observe the training
+  <a class="anchor" href="#3-observe-the-training">#</a>
+</h4>
+<p>Each training run logs information to disk and to the training database, which can be inspected using Omniboard.
+The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
+<h5 id="tensorboard">
+  Tensorboard
+  <a class="anchor" href="#tensorboard">#</a>
+</h5>
+<p>To monitor the training loss in detail, open tensorboard:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tensorboard --logdir<span style="color:#f92672">=</span>~/incasem/training_runs/tensorboard
+</span></span></code></pre></div><h5 id="omniboard-training-database">
+  Omniboard (training database)
+  <a class="anchor" href="#omniboard-training-database">#</a>
+</h5>
+<p>To observe the training and validation F1 scores, as well as the chosen experiment configuration, we use Omniboard.</p>
+<p>Activate the omniboard environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/omniboard_environment/bin/activate
+</span></span></code></pre></div><p>Run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>omniboard -m localhost:27017:incasem_trainings
+</span></span></code></pre></div><p>and paste <code>localhost:9000</code> into your browser.</p>
+<h4 id="4-pick-a-fine-tuned-model-for-prediction">
+  4. Pick a fine-tuned model for prediction
+  <a class="anchor" href="#4-pick-a-fine-tuned-model-for-prediction">#</a>
+</h4>
+<p>Since we usually do not have any ground truth on the target cell that we fine-tuned for, we cannot rigorously pick the best model iteration.</p>
+<p>We find that for example with ground truth in a 2 um<!-- raw HTML omitted -->3<!-- raw HTML omitted --> region of interest, typically after 5,000 - 10,000 iterations the fine-tuning has converged. The training loss (visible in tensorboard) can serve as a proxy for picking a model iteration in said interval.</p>
+<p>Now you can use the fine-tuned model to generate predictions on the new target cell, as described in the section <a href="#Prediction"><em>Prediction</em></a>.</p>
+<h2 id="training">
+  Training
+  <a class="anchor" href="#training">#</a>
+</h2>
+<p>This is an example based on our datasets, which are publicly available in <code>.zarr</code> format via Amazon Web Services.</p>
+<h4 id="0-download-training-data-1">
+  0. Download training data
+  <a class="anchor" href="#0-download-training-data-1">#</a>
+</h4>
+<p>Download <code>cell_1</code> and <code>cell_2</code> from our published datasets as outlined in the section <a href="#Optional-Download-our-data"><em>Download our data</em></a>.</p>
+<h4 id="1-prepare-the-data">
+  1. Prepare the data
+  <a class="anchor" href="#1-prepare-the-data">#</a>
+</h4>
+<p>We create a mask that will be used to calculate the F1 score for predictions, e.g. in the periodic validation during training.
+This mask, which we refer to as <em>exclusion zone</em>, simply sets the pixels at the object boundaries to 0, as we do not want that small errors close to the object boundaries affect the overall prediction score.</p>
+<p>For our example with Endoplasmic Reticulum annotations on <code>cell_1</code> and <code>cell_2</code>, we run (from the data formatting directory):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 60_create_metric_mask.py -f ~/incasem/data/cell_1/cell_1.zarr -d volumes/labels/er --out_dataset volumes/metric_masks/er --exclude_voxels_inwards <span style="color:#ae81ff">2</span> --exclude_voxels_outwards <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><p>and</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 60_create_metric_mask.py -f ~/incasem/data/cell_2/cell_2.zarr -d volumes/labels/er --out_dataset volumes/metric_masks/er --exclude_voxels_inwards <span style="color:#ae81ff">2</span> --exclude_voxels_outwards <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div><h4 id="2-create-a-training-data-configuration-file">
+  2. Create a training data configuration file
+  <a class="anchor" href="#2-create-a-training-data-configuration-file">#</a>
+</h4>
+<p>For running a training you need to create a configuration file in <code>JSON</code> format that specifies which data should be used.
+Here is an example, also available at <code>~/incasem/scripts/02_train/data_configs/example_train_er.json</code>:</p>
+<blockquote>
+<p>We assume the data to be in <code>~/incasem/data</code>, as defined <a href="scripts/02_train/config_training.yaml">here</a>.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_1_er&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_1/cell_1.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">120</span>, <span style="color:#ae81ff">1295</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">590</span>, <span style="color:#ae81ff">1350</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metric_masks&#34;</span>: [<span style="color:#e6db74">&#34;volumes/metric_masks/er&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/er&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_2_er&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_2/cell_2.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">275</span>, <span style="color:#ae81ff">700</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">395</span>, <span style="color:#ae81ff">600</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metric_masks&#34;</span>: [<span style="color:#e6db74">&#34;volumes/metric_masks/er&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/er&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>offset</code> and <code>shape</code> are specified in voxels and in <strong>z, y, x</strong> format. They have to outline a <em>region of interest</em> (ROI) that lies within the total available ROI of the dataset (as defined in <code>.zarray</code> and <code>.zattrs</code> files of each zarr volume).</p>
+<blockquote>
+<p>Note that the offset in each <code>.zattr</code> file is defined in nanometers, while the shape in <code>.zarray</code> is defined in voxels.</p>
+</blockquote>
+<p>All pixels inside the ROIs that belong to the structure of interest (e.g. endoplasmic reticulum above) in such a data configuration file have to be fully annotated. Additionally, our network architecture requires a context of 47 voxels of raw EM data around each ROI.</p>
+<h4 id="3-create-a-validation-data-configuration-file">
+  3. Create a validation data configuration file
+  <a class="anchor" href="#3-create-a-validation-data-configuration-file">#</a>
+</h4>
+<p>Additionally, you need to create a configuration file in <code>JSON</code> format that specifies which data should be used for periodic validation of the model during training.
+Here is an example, also available at <code>~/incasem/scripts/02_train/data_configs/example_validation_er.json</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_1_er_validation&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_1/cell_1.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">120</span>, <span style="color:#ae81ff">2645</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">600</span>, <span style="color:#ae81ff">590</span>, <span style="color:#ae81ff">250</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metric_masks&#34;</span>: [<span style="color:#e6db74">&#34;volumes/metric_masks/er&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/er&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_2_er_validation&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_2/cell_2.zarr&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;offset&#34;</span>: [<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">70</span>, <span style="color:#ae81ff">700</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;shape&#34;</span>: [<span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">205</span>, <span style="color:#ae81ff">600</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;voxel_size&#34;</span>: [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;raw&#34;</span>: <span style="color:#e6db74">&#34;volumes/raw_equalized_0.02&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metric_masks&#34;</span>: [<span style="color:#e6db74">&#34;volumes/metric_masks/er&#34;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;labels&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;volumes/labels/er&#34;</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="4-optional-adapt-the-training-configuration">
+  4. Optional: Adapt the training configuration
+  <a class="anchor" href="#4-optional-adapt-the-training-configuration">#</a>
+</h4>
+<p>The file <a href="scripts/02_train/config_training.yaml"><code>config_training.yaml</code></a> exposes a lot of parameters of the model training.</p>
+<p>Most importantly:</p>
+<ul>
+<li>If you would like to use data with a different resolution, apart from specifying in the data configuration files as outlined above, you need to adapt <code>data.voxel_size</code> in <code>config_training.yaml</code>.</li>
+<li>We guide the random sampling of blocks by rejecting blocks that consist of less than a given percentage (<code>training.reject.min_masked</code>) of foreground voxels with a chosen probability (&rsquo;training.reject.probability&rsquo;). If your dataset contains a lot of background, or no background at all, you might want to adapt these parameters accordingly.</li>
+</ul>
+<h4 id="5-launch-the-training">
+  5. Launch the training
+  <a class="anchor" href="#5-launch-the-training">#</a>
+</h4>
+<p>At the training scripts folder,</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/incasem/scripts/02_train
+</span></span></code></pre></div><p>run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python train.py --name example_training with config_training.yaml training.data<span style="color:#f92672">=</span>data_configs/example_train_er.json validation.data<span style="color:#f92672">=</span>data_configs/example_validation_er.json torch.device<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><h4 id="6-observe-the-training">
+  6. Observe the training
+  <a class="anchor" href="#6-observe-the-training">#</a>
+</h4>
+<p>Each training run logs information to disk and to the training database, which can be inspected using Omniboard.
+The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
+<h5 id="tensorboard-1">
+  Tensorboard
+  <a class="anchor" href="#tensorboard-1">#</a>
+</h5>
+<p>To monitor the training loss in detail, open tensorboard:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tensorboard --logdir<span style="color:#f92672">=</span>~/incasem/training_runs/tensorboard
+</span></span></code></pre></div><h5 id="omniboard-training-database-1">
+  Omniboard (training database)
+  <a class="anchor" href="#omniboard-training-database-1">#</a>
+</h5>
+<p>To observe the training and validation F1 scores, as well as the chosen experiment configuration, we use Omniboard.</p>
+<p>Activate the omniboard environment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/omniboard_environment/bin/activate
+</span></span></code></pre></div><p>Run</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>omniboard -m localhost:27017:incasem_trainings
+</span></span></code></pre></div><p>and paste <code>localhost:9000</code> into your browser.</p>
+<h4 id="7-pick-a-model-for-prediction">
+  7. Pick a model for prediction
+  <a class="anchor" href="#7-pick-a-model-for-prediction">#</a>
+</h4>
+<p>Using Omniboard, pick a model iteration where the validation loss and the validation F1 score have converged. Now use this model to generate predictions on new data, as described in the section <a href="#Prediction"><em>Prediction</em></a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#optional-download-our-data">Optional: Download our data</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prepare-your-own-data-for-prediction">Prepare your own data for prediction</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prediction">Prediction</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">Prepare your own ground truth annotations for fine-tuning or training</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#fine-tuning">Fine-Tuning</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#training">Training</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

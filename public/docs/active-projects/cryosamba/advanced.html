@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Advanced instructions # Table of Contents # Installation 🐍 Training Setup Training 🛠️ Run Training 🚀 Visualization with TensorBoard 📈 Inference Setup Inference 🛠️ Run Inference 🚀 Installation # Open a terminal window and run conda create --name your-env-name python=3.11 -y to create the environment (replace your-env-name with a desired name). Activate the environment with conda activate your-env-name. In the future, you will have to activate the environment anytime you want to use CryoSamba.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/active-projects/cryosamba/advanced.html">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="From Scratch(Advanced)">
+  <meta property="og:description" content="Advanced instructions # Table of Contents # Installation 🐍 Training Setup Training 🛠️ Run Training 🚀 Visualization with TensorBoard 📈 Inference Setup Inference 🛠️ Run Inference 🚀 Installation # Open a terminal window and run conda create --name your-env-name python=3.11 -y to create the environment (replace your-env-name with a desired name). Activate the environment with conda activate your-env-name. In the future, you will have to activate the environment anytime you want to use CryoSamba.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>From Scratch(Advanced) | My New Hugo Site</title>
+<link rel="manifest" href="../../../manifest.json">
+<link rel="icon" href="../../../favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/active-projects/cryosamba/advanced.html">
+<link rel="stylesheet" href="../../../book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="../../../fuse.min.js"></script>
+  <script defer src="../../../en.search.min.1623e1f409ca037ffad5a4b5c0d671bf5429b35e854dd625f74fb5951d383ce2.js" integrity="sha256-FiPh9AnKA3/61aS1wNZxv1Qps16FTdYl90&#43;1lR04POI=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../../"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Active Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a96e0855703b9afc254b1c8447ed29b5" class="toggle"  />
+    <label for="section-a96e0855703b9afc254b1c8447ed29b5" class="flex justify-between">
+      <a role="button" class="">Asem</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/asem/project.html" class="">ASEM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a78baf401048783b4b14a708b67f7145" class="toggle" checked />
+    <label for="section-a78baf401048783b4b14a708b67f7145" class="flex justify-between">
+      <a role="button" class="">Cryosamba</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/paper.html" class="">BioArchive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/project.html" class="">CryoSamba Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/active-projects/cryosamba/advanced.html" class="active">From Scratch(Advanced)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-06dfe6d05518a90614b0b8737b771aca" class="toggle"  />
+    <label for="section-06dfe6d05518a90614b0b8737b771aca" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa71f318b3309fa9d5b96fe96590e2c6" class="toggle"  />
+    <label for="section-fa71f318b3309fa9d5b96fe96590e2c6" class="flex justify-between">
+      <a role="button" class="">Image Recognition</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Git Hub</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/github/github.html" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Nvidia Cuda</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/nvidia-cuda/deeplearningsetup.html" class="">NVIDIA GPU and CUDA Setup Guide</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Python</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/production_poetry.html" class="">Poetry: Python Dependency Management Made Easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/conda_env.html" class="">Using Conda Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/python/python-virtual-environment.html" class="">Using Python Without Breaking Your Local Machine!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Lab Computing Site</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/labcomputingsite/labcomputingsite.html" class="">Lab Computing Site</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Sbgrid Wiki</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../../docs/sbgrid_wiki/sbgrid.html" class="">SBGrid Wiki</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>From Scratch(Advanced)</strong>
+
+  <label for="toc-control">
+    
+    <img src="../../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#training">Training</a>
+      <ul>
+        <li><a href="#setup-training">Setup Training</a></li>
+        <li><a href="#run-training">Run Training</a></li>
+        <li><a href="#visualization-with-tensorboard">Visualization with TensorBoard</a></li>
+      </ul>
+    </li>
+    <li><a href="#inference">Inference</a>
+      <ul>
+        <li><a href="#setup-inference">Setup Inference</a></li>
+        <li><a href="#run-inference">Run Inference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="advanced-instructions">
+  Advanced instructions
+  <a class="anchor" href="#advanced-instructions">#</a>
+</h1>
+<h2 id="table-of-contents">
+  Table of Contents
+  <a class="anchor" href="#table-of-contents">#</a>
+</h2>
+<ol>
+<li><a href="#installation">Installation</a> 🐍</li>
+<li><a href="#training">Training</a>
+<ul>
+<li><a href="#setup-training">Setup Training</a> 🛠️</li>
+<li><a href="#run-training">Run Training</a> 🚀</li>
+<li><a href="#visualization-with-tensorboard">Visualization with TensorBoard</a> 📈</li>
+</ul>
+</li>
+<li><a href="#inference">Inference</a>
+<ul>
+<li><a href="#setup-inference">Setup Inference</a> 🛠️</li>
+<li><a href="#run-inference">Run Inference</a> 🚀</li>
+</ul>
+</li>
+</ol>
+<h2 id="installation">
+  Installation
+  <a class="anchor" href="#installation">#</a>
+</h2>
+<ol>
+<li>Open a terminal window and run <code>conda create --name your-env-name python=3.11 -y</code> to create the environment (replace <code>your-env-name</code> with a desired name).</li>
+<li>Activate the environment with <code>conda activate your-env-name</code>. In the future, you will have to activate the environment anytime you want to use CryoSamba.</li>
+<li>Install PyTorch (for CUDA 11.8):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+</span></span></code></pre></div></li>
+<li>Install the remaining libraries:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install tifffile mrcfile easydict loguru tensorboard cupy-cuda11x
+</span></span></code></pre></div></li>
+<li>Navigate to the directory where you want to save the Cryosamba code (via <code>cd /path/to/dir</code>). Then run</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/kirchhausenlab/Cryosamba.git
+</span></span></code></pre></div><p>in this directory. If you only have access to a Cryosamba <code>.zip</code> file instead, simply extract it there.</p>
+<h2 id="training">
+  Training
+  <a class="anchor" href="#training">#</a>
+</h2>
+<h3 id="setup-training">
+  Setup Training
+  <a class="anchor" href="#setup-training">#</a>
+</h3>
+<p>Create a <code>your_train_config.json</code> config file somewhere. Use as default the template below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;train_dir&#34;</span>: <span style="color:#e6db74">&#34;/path/to/dir/Cryosamba/runs/exp-name/train&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data_path&#34;</span>: [<span style="color:#e6db74">&#34;/path/to/file/volume.mrc&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;train_data&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;max_frame_gap&#34;</span>: <span style="color:#ae81ff">6</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;patch_shape&#34;</span>: [<span style="color:#ae81ff">256</span>, <span style="color:#ae81ff">256</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;patch_overlap&#34;</span>: [<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">16</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;split_ratio&#34;</span>: <span style="color:#ae81ff">0.95</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;batch_size&#34;</span>: <span style="color:#ae81ff">32</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;num_workers&#34;</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;train&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;load_ckpt_path&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;print_freq&#34;</span>: <span style="color:#ae81ff">100</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;save_freq&#34;</span>: <span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;val_freq&#34;</span>: <span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;num_iters&#34;</span>: <span style="color:#ae81ff">200000</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;warmup_iters&#34;</span>: <span style="color:#ae81ff">300</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;mixed_precision&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;compile&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;optimizer&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;lr&#34;</span>: <span style="color:#ae81ff">2e-4</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;lr_decay&#34;</span>: <span style="color:#ae81ff">0.99995</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;weight_decay&#34;</span>: <span style="color:#ae81ff">0.0001</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;epsilon&#34;</span>: <span style="color:#ae81ff">1e-8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;betas&#34;</span>: [<span style="color:#ae81ff">0.9</span>, <span style="color:#ae81ff">0.999</span>]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;biflownet&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pyr_dim&#34;</span>: <span style="color:#ae81ff">24</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pyr_level&#34;</span>: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;corr_radius&#34;</span>: <span style="color:#ae81ff">4</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;kernel_size&#34;</span>: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;warp_type&#34;</span>: <span style="color:#e6db74">&#34;soft_splat&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;padding_mode&#34;</span>: <span style="color:#e6db74">&#34;reflect&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;fix_params&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;fusionnet&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;num_channels&#34;</span>: <span style="color:#ae81ff">16</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;padding_mode&#34;</span>: <span style="color:#e6db74">&#34;reflect&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;fix_params&#34;</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Explanation of parameters:</p>
+<ul>
+<li><code>train_dir</code>: Folder where the checkpoints will be saved (e.g., <code>exp-name/train</code>).</li>
+<li><code>data_path</code>: full path to a single (3D) .tif, .mrc or .rec file, or full path to a folder containing a sequence of (2D) .tif files, ordered alphanumerically matching the Z-stack order. You can train on multiple volumes by including the paths as elements of a list.</li>
+<li><code>train_data</code>: parameters related to the raw data used for training
+<ul>
+<li><code>max_frame_gap</code>: Maximum frame gap used for training (see manuscript). For our data, we used values of 3, 6 and 10 for resolutions of 15.72, 7.86 and 2.62 angstroms/voxel, respectively.</li>
+<li><code>patch_shape</code>: X and Y resolution of the patches the model will be trained on (must be a multiple of 32).</li>
+<li><code>patch_overlap</code>: overlap (on X and Y) between consecutive patches (see manuscript).</li>
+<li><code>split_ratio</code>: train and validation data split ratio. Must be a float between 0 and 1. E.g., 0.95 means that 95% of the data will be assigned for training and 5% for validation.</li>
+<li><code>batch_size</code>: Number of data points loaded into the GPU at once.</li>
+<li><code>num_workers</code>: Number of simultaneous CPU workers used by the Pytorch Dataloader.</li>
+</ul>
+</li>
+<li><code>train</code>: parameters related to the training routine
+<ul>
+<li><code>load_ckpt_path</code>: <code>null</code> to start a training run from scratch, or the path to a (<code>.pt</code> or <code>.pth</code>) model checkpoint if you want to start from a pretrained model.</li>
+<li><code>print_freq</code>: frequency of the print statements in number of iterations.</li>
+<li><code>save_freq</code>: frequency of model checkpoint saving in number of iterations.</li>
+<li><code>val_freq</code>: frequency validation runs in number of iterations.</li>
+<li><code>num_iters</code>: Length of the training run (default is 200k iterations).</li>
+<li><code>warmup_iters</code>: number of iterations for the learning rate warmu-up.</li>
+<li><code>mixed_precision</code>: if <code>true</code>, uses mixed precision training.</li>
+<li><code>compile</code>: If <code>true</code>, uses <code>torch.compile</code> for faster training (might lead to errors, and has a few-minutes overhead time before the training iterations).</li>
+</ul>
+</li>
+<li><code>optimizer</code>: parameters related to the optimization algorithm
+<ul>
+<li><code>lr</code>: base learning rate.</li>
+<li><code>lr_decay</code>: multiplicative factor for the learning rate decay.</li>
+<li><code>weight_decay</code>: weight decay for the AdamW optimizer.</li>
+<li><code>epsilon</code>: epsilon for the AdamW optimizer.</li>
+<li><code>betas</code>: betas for the AdamW optimizer.</li>
+</ul>
+</li>
+<li><code>biflownet</code>: parameters related to the Bi-Directional Optical Flow module (see manuscript and EBME paper)
+<ul>
+<li><code>pyr_dim</code>: base number of channels of the Feature Pyramid and Flow Estimator networks&rsquo; layers.</li>
+<li><code>pyr_level</code>: number of pyramid levels of the Feature Pyramid network.</li>
+<li><code>corr_radius</code>: radius of the correlation volume function.</li>
+<li><code>kernel_size</code>: kernel size of the biflownet convolutional layers.</li>
+<li><code>warp_type</code>: type of Optical Flow warping (<code>soft_splat</code>, <code>avg_splat</code>, <code>fw_splat</code> or <code>backwarp</code>)</li>
+<li><code>padding_mode</code>: padding mode of biflownet convolutional layers.</li>
+<li><code>fix_params</code>: set to true in order to fix biflownet&rsquo;s weights and disable learning.</li>
+</ul>
+</li>
+<li><code>fusionnet</code>:
+<ul>
+<li><code>num_channels</code>: base number of channels of fusionnet layers.</li>
+<li><code>padding_mode</code>: padding mode of fusionnet convolutional layers.</li>
+<li><code>fix_params</code>: set to true in order to fix fusionnet&rsquo;s weights and disable learning.</li>
+</ul>
+</li>
+</ul>
+<p>Recommended folder structure for each experiment:</p>
+<pre tabindex="0"><code>exp-name
+├── train
+└── inference
+</code></pre><p>Running a training session may overwrite the <code>exp-name/train</code> folder but won&rsquo;t affect <code>exp-name/inference</code>, and vice versa.</p>
+<h3 id="run-training">
+  Run Training
+  <a class="anchor" href="#run-training">#</a>
+</h3>
+<ol>
+<li>In the terminal, run <code>nvidia-smi</code> to check available GPUs. For example, if you have 8 GPUs they will be numbered from 0 to 7.</li>
+<li>To train on GPUs 0 and 1, go to the CryoSamba folder and run:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CUDA_VISIBLE_DEVICES<span style="color:#f92672">=</span>0,1 torchrun --standalone --nproc_per_node<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> train.py --config path/to/your_train_config.json
+</span></span></code></pre></div>Adjust <code>--nproc_per_node</code> to change the number of GPUs. Use <code>--seed 1234</code> for reproducibility.</li>
+<li>To interrupt training, press <code>CTRL + C</code>. You can resume training or start from scratch if prompted.</li>
+</ol>
+<h3 id="visualization-with-tensorboard">
+  Visualization with TensorBoard
+  <a class="anchor" href="#visualization-with-tensorboard">#</a>
+</h3>
+<ol>
+<li>Open a terminal window inside a graphical interface (e.g., a regular desktop computer, Chrome Remote Desktop, XDesk).</li>
+<li>Activate the environment and run:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tensorboard --logdir path/to/exp-name/train
+</span></span></code></pre></div></li>
+<li>In a browser, open <code>localhost:6006</code>.</li>
+<li>Use the slider under <code>SCALARS</code> to smooth noisy plots.</li>
+</ol>
+<h2 id="inference">
+  Inference
+  <a class="anchor" href="#inference">#</a>
+</h2>
+<h3 id="setup-inference">
+  Setup Inference
+  <a class="anchor" href="#setup-inference">#</a>
+</h3>
+<p>Create a <code>your_inference_config.json</code> config file somewhere. Use as default the template below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;train_dir&#34;</span>: <span style="color:#e6db74">&#34;/path/to/dir/Cryosamba/runs/exp-name/train&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;data_path&#34;</span>: <span style="color:#e6db74">&#34;/path/to/file/volume.mrc&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inference_dir&#34;</span>: <span style="color:#e6db74">&#34;/path/to/dir/Cryosamba/runs/exp-name/inference&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inference_data&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;max_frame_gap&#34;</span>: <span style="color:#ae81ff">12</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;patch_shape&#34;</span>: [<span style="color:#ae81ff">256</span>, <span style="color:#ae81ff">256</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;patch_overlap&#34;</span>: [<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">16</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;batch_size&#34;</span>: <span style="color:#ae81ff">32</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;num_workers&#34;</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;inference&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;output_format&#34;</span>: <span style="color:#e6db74">&#34;same&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;load_ckpt_name&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;pyr_level&#34;</span>: <span style="color:#ae81ff">3</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;TTA&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;mixed_precision&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;compile&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Explanation of parameters:</p>
+<ul>
+<li><code>train_dir</code>: Folder from which the checkpoints will be loaded.</li>
+<li><code>data_path</code>: full path to a single (3D) .tif, .mrc or .rec file, or full path to a folder containing a sequence of (2D) .tif files, ordered alphanumerically matching the Z-stack order.</li>
+<li><code>inference_dir</code>: Folder where the denoised data will be saved (e.g., <code>exp-name/inference</code>).</li>
+<li><code>inference_data</code>: parameters related to the raw data used for inference
+<ul>
+<li><code>max_frame_gap</code>: maximum frame gap used for inference (see manuscript). For our data, we used values of 6, 12 and 20 for resolutions of 15.72, 7.86 and 2.62 angstroms/voxel, respectively.</li>
+<li><code>patch_shape</code>: X and Y resolution of the patches the model will be trained on (must be a multiple of 32).</li>
+<li><code>patch_overlap</code>: overlap (on X and Y) between consecutive patches (see manuscript).</li>
+<li><code>batch_size</code>: Number of data points loaded into the GPU at once.</li>
+<li><code>num_workers</code>: Number of simultaneous CPU workers used by the Pytorch Dataloader.</li>
+</ul>
+</li>
+<li><code>inference</code>: parameters related to the inference routine
+<ul>
+<li><code>output_format</code>: <code>&quot;same&quot;</code> to save the denoised result in the same format as the input raw data. Otherwise, specify either <code>&quot;tif_file&quot;</code>, <code>&quot;mrc_file&quot;</code>, <code>&quot;rec_file&quot;</code> or <code>&quot;tif_sequence&quot;</code>.</li>
+<li><code>load_ckpt_path</code>: <code>null</code> to load model weights from <code>train-dir/last.pt</code>, otherwise use the path for a custom model checkpoint.</li>
+<li><code>pyr_level</code>: number of pyramid levels of the Feature Pyramid network of the biflownet.</li>
+<li><code>TTA</code>: if <code>true</code>, uses Test-Time Augmentation (see manuscript), for slightly better results at the cost of longer inference times.</li>
+<li><code>mixed_precision</code>: if <code>true</code>, uses mixed precision training.</li>
+<li><code>compile</code>: If <code>true</code>, uses <code>torch.compile</code> for faster inference (might lead to errors, and has a few-minutes overhead time before the inference iterations).</li>
+</ul>
+</li>
+</ul>
+<h3 id="run-inference">
+  Run Inference
+  <a class="anchor" href="#run-inference">#</a>
+</h3>
+<ol>
+<li>In the terminal, run <code>nvidia-smi</code> to check available GPUs. For example, if you have 8 GPUs they will be numbered from 0 to 7.</li>
+<li>To run inference on GPUs 0 and 1, go to the CryoSamba folder and run:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>CUDA_VISIBLE_DEVICES<span style="color:#f92672">=</span>0,1 torchrun --standalone --nproc_per_node<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span> inference.py --config path/to/your_inference_config.json
+</span></span></code></pre></div>Adjust <code>--nproc_per_node</code> to change the number of GPUs. Use <code>--seed 1234</code> for reproducibility.</li>
+<li>To interrupt inference, press <code>CTRL + C</code>. You can resume or start from scratch if prompted.</li>
+<li>The final denoised volume will be located at <code>/path/to/dir/runs/exp-name/inference</code>. It will be either a file named <code>result.tif</code>, <code>result.mrc</code>, <code>result.rec</code> or a folder named <code>result</code>.</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#table-of-contents">Table of Contents</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#training">Training</a>
+      <ul>
+        <li><a href="#setup-training">Setup Training</a></li>
+        <li><a href="#run-training">Run Training</a></li>
+        <li><a href="#visualization-with-tensorboard">Visualization with TensorBoard</a></li>
+      </ul>
+    </li>
+    <li><a href="#inference">Inference</a>
+      <ul>
+        <li><a href="#setup-inference">Setup Inference</a></li>
+        <li><a href="#run-inference">Run Inference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:51862/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:51862/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ASEM</title>
-      <link>http://localhost:51862/docs/active-projects/asem/project/</link>
+      <link>http://localhost:1313/docs/active-projects/asem/project.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/active-projects/asem/project/</guid>
+      <guid>http://localhost:1313/docs/active-projects/asem/project.html</guid>
       <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
     </item>
     <item>
       <title>BioArchive</title>
-      <link>http://localhost:51862/docs/active-projects/cryosamba/paper/</link>
+      <link>http://localhost:1313/docs/active-projects/cryosamba/paper.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/active-projects/cryosamba/paper/</guid>
+      <guid>http://localhost:1313/docs/active-projects/cryosamba/paper.html</guid>
       <description>CryoSamba: Self-Supervised Cryo-ET Image Denoising # Abstract # Cryogenic electron tomography (cryo-ET) has rapidly advanced as a high-resolution imaging tool for visualizing subcellular structures in 3D with molecular detail. Direct image inspection remains challenging due to inherent low signal-to-noise ratios (SNR). We introduce CryoSamba, a self-supervised deep learning-based model designed for denoising cryo-ET images. CryoSamba enhances single consecutive 2D planes in tomograms by averaging motion-compensated nearby planes through deep learning interpolation, effectively mimicking increased exposure.</description>
     </item>
     <item>
       <title>CryoSamba Main</title>
-      <link>http://localhost:51862/docs/active-projects/cryosamba/project/</link>
+      <link>http://localhost:1313/docs/active-projects/cryosamba/project.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/active-projects/cryosamba/project/</guid>
+      <guid>http://localhost:1313/docs/active-projects/cryosamba/project.html</guid>
       <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom KirchhausenCryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
     </item>
     <item>
       <title>GitHub</title>
-      <link>http://localhost:51862/docs/github/github/</link>
+      <link>http://localhost:1313/docs/github/github.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/github/github/</guid>
+      <guid>http://localhost:1313/docs/github/github.html</guid>
       <description>Kirchhausenlab GitHub # All the code and software developed by the Kirchhausen lab can be found on our GitHub page.&#xA;Note: You will need to be a member of the Kirchhausen lab GitHub organization to access the repositories.</description>
     </item>
     <item>
       <title>NVIDIA GPU and CUDA Setup Guide</title>
-      <link>http://localhost:51862/docs/nvidia-cuda/deeplearningsetup/</link>
+      <link>http://localhost:1313/docs/nvidia-cuda/deeplearningsetup.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/nvidia-cuda/deeplearningsetup/</guid>
+      <guid>http://localhost:1313/docs/nvidia-cuda/deeplearningsetup.html</guid>
       <description>Verifying NVIDIA Hardware and CUDA Installation # Check NVIDIA GPU # First, let&amp;rsquo;s verify if your system recognizes the NVIDIA GPU:&#xA;Open a terminal and run:&#xA;lspci | grep -i nvidia This should display information about your NVIDIA GPU.&#xA;Right-click on the Windows Start button and select &amp;ldquo;Device Manager&amp;rdquo;&#xA;Expand the &amp;ldquo;Display adapters&amp;rdquo; section&#xA;You should see your NVIDIA GPU listed here Recent Macs don&amp;rsquo;t use NVIDIA GPUs. For older Macs:</description>
     </item>
     <item>
       <title>Poetry: Python Dependency Management Made Easy</title>
-      <link>http://localhost:51862/docs/python/production_poetry/</link>
+      <link>http://localhost:1313/docs/python/production_poetry.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/python/production_poetry/</guid>
+      <guid>http://localhost:1313/docs/python/production_poetry.html</guid>
       <description>Poetry # Explanation # Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.&#xA;Poetry uses a file called pyproject.toml to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.</description>
     </item>
     <item>
       <title>Using Conda Environment</title>
-      <link>http://localhost:51862/docs/python/conda_env/</link>
+      <link>http://localhost:1313/docs/python/conda_env.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/python/conda_env/</guid>
+      <guid>http://localhost:1313/docs/python/conda_env.html</guid>
       <description>Using Conda Environment # Explanation # Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.&#xA;Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts.</description>
     </item>
     <item>
       <title>Using Python Without Breaking Your Local Machine!</title>
-      <link>http://localhost:51862/docs/python/python-virtual-environment/</link>
+      <link>http://localhost:1313/docs/python/python-virtual-environment.html</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/python/python-virtual-environment/</guid>
+      <guid>http://localhost:1313/docs/python/python-virtual-environment.html</guid>
       <description>Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.&#xA;Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.</description>
     </item>
     <item>
       <title>From Scratch(Advanced)</title>
-      <link>http://localhost:51862/docs/active-projects/cryosamba/advanced/</link>
+      <link>http://localhost:1313/docs/active-projects/cryosamba/advanced.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/active-projects/cryosamba/advanced/</guid>
+      <guid>http://localhost:1313/docs/active-projects/cryosamba/advanced.html</guid>
       <description>Advanced instructions # Table of Contents # Installation 🐍 Training Setup Training 🛠️ Run Training 🚀 Visualization with TensorBoard 📈 Inference Setup Inference 🛠️ Run Inference 🚀 Installation # Open a terminal window and run conda create --name your-env-name python=3.11 -y to create the environment (replace your-env-name with a desired name). Activate the environment with conda activate your-env-name. In the future, you will have to activate the environment anytime you want to use CryoSamba.</description>
     </item>
     <item>
       <title>Lab Computing Site</title>
-      <link>http://localhost:51862/docs/labcomputingsite/labcomputingsite/</link>
+      <link>http://localhost:1313/docs/labcomputingsite/labcomputingsite.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/labcomputingsite/labcomputingsite/</guid>
+      <guid>http://localhost:1313/docs/labcomputingsite/labcomputingsite.html</guid>
       <description>Lab Computing Site # More Information On this Website</description>
     </item>
     <item>
       <title>SBGrid Wiki</title>
-      <link>http://localhost:51862/docs/sbgrid_wiki/sbgrid/</link>
+      <link>http://localhost:1313/docs/sbgrid_wiki/sbgrid.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:51862/docs/sbgrid_wiki/sbgrid/</guid>
+      <guid>http://localhost:1313/docs/sbgrid_wiki/sbgrid.html</guid>
       <description>SBGrid Wiki # They support many labs, who all use the suite of tools differently. Much of the wiki is dedicated to support for labs that use the SBGrid GUI and program browser, but there is still useful information for our lab When you encounter an IT issue, the best thing to do is create a help ticket by emailing help@sbgrid.org. Nine times of ten, the person responding will be Justin O’Connor, who dedicates extra time from his schedule to managing TK Lab computing infrastructure.</description>
     </item>
   </channel>

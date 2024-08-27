@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Poetry # Explanation # Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+Poetry uses a file called pyproject.toml to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/python/production_poetry.html">
+  <meta property="og:site_name" content="My New Hugo Site">
+  <meta property="og:title" content="Poetry: Python Dependency Management Made Easy">
+  <meta property="og:description" content="Poetry # Explanation # Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+Poetry uses a file called pyproject.toml to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-08-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-15T00:00:00+00:00">
+<title>Poetry: Python Dependency Management Made Easy | My New Hugo Site</title>
+<link rel="manifest" href="../../manifest.json">
+<link rel="icon" href="../../favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/python/production_poetry.html">
+<link rel="stylesheet" href="../../book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="../../fuse.min.js"></script>
+  <script defer src="../../en.search.min.1623e1f409ca037ffad5a4b5c0d671bf5429b35e854dd625f74fb5951d383ce2.js" integrity="sha256-FiPh9AnKA3/61aS1wNZxv1Qps16FTdYl90&#43;1lR04POI=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="../../"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Active Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a96e0855703b9afc254b1c8447ed29b5" class="toggle"  />
+    <label for="section-a96e0855703b9afc254b1c8447ed29b5" class="flex justify-between">
+      <a role="button" class="">Asem</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/active-projects/asem/project.html" class="">ASEM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a78baf401048783b4b14a708b67f7145" class="toggle"  />
+    <label for="section-a78baf401048783b4b14a708b67f7145" class="flex justify-between">
+      <a role="button" class="">Cryosamba</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/active-projects/cryosamba/paper.html" class="">BioArchive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/active-projects/cryosamba/project.html" class="">CryoSamba Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/active-projects/cryosamba/advanced.html" class="">From Scratch(Advanced)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-06dfe6d05518a90614b0b8737b771aca" class="toggle"  />
+    <label for="section-06dfe6d05518a90614b0b8737b771aca" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-fa71f318b3309fa9d5b96fe96590e2c6" class="toggle"  />
+    <label for="section-fa71f318b3309fa9d5b96fe96590e2c6" class="flex justify-between">
+      <a role="button" class="">Image Recognition</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Git Hub</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/github/github.html" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Nvidia Cuda</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/nvidia-cuda/deeplearningsetup.html" class="">NVIDIA GPU and CUDA Setup Guide</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Python</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/python/production_poetry.html" class="active">Poetry: Python Dependency Management Made Easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/python/conda_env.html" class="">Using Conda Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/python/python-virtual-environment.html" class="">Using Python Without Breaking Your Local Machine!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Lab Computing Site</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/labcomputingsite/labcomputingsite.html" class="">Lab Computing Site</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Sbgrid Wiki</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="../../docs/sbgrid_wiki/sbgrid.html" class="">SBGrid Wiki</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="../../svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Poetry: Python Dependency Management Made Easy</strong>
+
+  <label for="toc-control">
+    
+    <img src="../../svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#poetry">Poetry</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="poetry">
+  Poetry
+  <a class="anchor" href="#poetry">#</a>
+</h2>
+<h3 id="explanation">
+  Explanation
+  <a class="anchor" href="#explanation">#</a>
+</h3>
+<p>Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.</p>
+<p>Poetry uses a file called <code>pyproject.toml</code> to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.</p>
+<p>Poetry simplifies the process of managing Python projects. It handles dependency resolution, virtual environment creation, and package management in one tool. This makes it easier to set up consistent development environments and share your project with others.</p>
+<p>With Poetry, you can easily:</p>
+<ul>
+<li>Manage project dependencies</li>
+<li>Create and manage virtual environments</li>
+<li>Build and publish packages</li>
+<li>Handle dependency conflicts</li>
+<li>Lock dependencies for reproducible builds</li>
+</ul>
+<h3 id="benefits">
+  Benefits
+  <a class="anchor" href="#benefits">#</a>
+</h3>
+<ul>
+<li><strong>Dependency Resolution</strong>: Automatically resolves and installs project dependencies.</li>
+<li><strong>Virtual Environment Management</strong>: Creates and manages virtual environments for you.</li>
+<li><strong>Reproducibility</strong>: Uses a lock file to ensure consistent installations across different systems.</li>
+<li><strong>Build and Publish</strong>: Simplifies the process of building and publishing Python packages.</li>
+</ul>
+<h3 id="installation">
+  Installation
+  <a class="anchor" href="#installation">#</a>
+</h3>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p><strong>Install pyenv</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl https://pyenv.run | bash
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Set up your shell environment</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export PYENV_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.pyenv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[[</span> -d $PYENV_ROOT/bin <span style="color:#f92672">]]</span> <span style="color:#f92672">&amp;&amp;</span> export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$PYENV_ROOT<span style="color:#e6db74">/bin:</span>$PATH<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>eval <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pyenv init -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>eval <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>pyenv virtualenv-init -<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Restart your shell</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source ~/.bashrc
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="install-python-with-pyenv">
+  Install Python with pyenv
+  <a class="anchor" href="#install-python-with-pyenv">#</a>
+</h4>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p><strong>Install Python 3.10</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv install 3.10
+</span></span></code></pre></div></li>
+<li>
+<p><strong>If you encounter errors, install these dependencies</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install -y make build-essential libssl-dev zlib1g-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Verify the installation</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pyenv versions
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="install-poetry">
+  Install Poetry
+  <a class="anchor" href="#install-poetry">#</a>
+</h4>
+<ol>
+<li>
+<p><strong>Create a virtual environment and install Poetry</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -m venv $VENV_PATH
+</span></span><span style="display:flex;"><span>$VENV_PATH/bin/pip install -U pip setuptools
+</span></span><span style="display:flex;"><span>$VENV_PATH/bin/pip install poetry
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Create a new project and install dependencies</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>poetry new my-project
+</span></span><span style="display:flex;"><span>cd my-project
+</span></span><span style="display:flex;"><span>poetry install
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Add project-specific dependencies</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>poetry add pandas numpy matplotlib seaborn torch torchvision seaborn wandb ipykernel tifffile loguru loky h5py cloudpickle
+</span></span></code></pre></div></li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#poetry">Poetry</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
