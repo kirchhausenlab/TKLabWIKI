@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in
-Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al. Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
+Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
 Please cite the publication if you are using this code in your research.
 Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.
 Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.">
@@ -14,7 +14,7 @@ Table of Contents # Installation Optional: Download our data Prepare your own da
   <meta property="og:site_name" content="TKLab Wiki">
   <meta property="og:title" content="ASEM">
   <meta property="og:description" content="Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in
-Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al. Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
+Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.
 Please cite the publication if you are using this code in your research.
 Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.
 Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.">
@@ -29,9 +29,7 @@ Table of Contents # Installation Optional: Download our data Prepare your own da
 <link rel="canonical" href="http://localhost:1313/docs/active-projects/asem/project/">
 <link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.043e6fd99a8bb476f3445b14f8e7ecaeb0e0569841b0bf1e5804b3c33507415f.js" integrity="sha256-BD5v2ZqLtHbzRFsU&#43;OfsrrDgVphBsL8eWASzwzUHQV8=" crossorigin="anonymous"></script>
-
-  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.e7eef3b46d6a420e16c95b761d875be64ac48e6109c52e79a30c71df940232f8.js" integrity="sha256-5&#43;7ztG1qQg4WyVt2HYdb5krEjmEJxS55owxx35QCMvg=" crossorigin="anonymous"></script>
 
   
 
@@ -787,31 +785,22 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>This repository contains the segmentation pipeline described in</p>
 <blockquote>
-<p>Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.<!-- raw HTML omitted -->
-  <a href="https://rupress.org/jcb/article/222/2/e202208005/213736/Deep-neural-network-automated-segmentation-of"><em>Deep neural network automated segmentation of cellular structures in volume electron microscopy</em></a>,<!-- raw HTML omitted -->Journal of Cell Biology, 2022.</p>
+<p>Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.<!-- raw HTML omitted --><a href="https://rupress.org/jcb/article/222/2/e202208005/213736/Deep-neural-network-automated-segmentation-of"><em>Deep neural network automated segmentation of cellular structures in volume electron microscopy</em></a>,<!-- raw HTML omitted -->Journal of Cell Biology, 2022.</p>
 </blockquote>
 <p>Please cite the publication if you are using this code in your research.</p>
-<p>Our semi-automated annotation tool from the same publication is available at 
-  <a href="https://github.com/kirchhausenlab/gc_segment">https://github.com/kirchhausenlab/gc_segment</a>.</p>
+<p>Our semi-automated annotation tool from the same publication is available at <a href="https://github.com/kirchhausenlab/gc_segment">https://github.com/kirchhausenlab/gc_segment</a>.</p>
 <h2 id="table-of-contents">
   Table of Contents
   <a class="anchor" href="#table-of-contents">#</a>
 </h2>
 <ul>
-<li>
-  <a href="/#Installation">Installation</a></li>
-<li>
-  <a href="/#Optional-Download-our-data">Optional: Download our data</a></li>
-<li>
-  <a href="/#Prepare-your-own-data-for-prediction">Prepare your own data for prediction</a></li>
-<li>
-  <a href="/#Prediction">Prediction</a></li>
-<li>
-  <a href="/#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">Prepare your own ground truth annotations for fine-tuning or training</a></li>
-<li>
-  <a href="/#Fine-tuning">Fine-Tuning</a></li>
-<li>
-  <a href="/#Training">Training</a></li>
+<li><a href="#Installation">Installation</a></li>
+<li><a href="#Optional-Download-our-data">Optional: Download our data</a></li>
+<li><a href="#Prepare-your-own-data-for-prediction">Prepare your own data for prediction</a></li>
+<li><a href="#Prediction">Prediction</a></li>
+<li><a href="#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">Prepare your own ground truth annotations for fine-tuning or training</a></li>
+<li><a href="#Fine-tuning">Fine-Tuning</a></li>
+<li><a href="#Training">Training</a></li>
 </ul>
 <h2 id="installation">
   Installation
@@ -856,8 +845,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
 </span></span></code></pre></div><p>Install</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -e ./incasem
 </span></span></code></pre></div><h4 id="5-install-pytorch-as-outlined-herehttpspytorchorgget-startedlocally">
-  5. Install pytorch as outlined 
-  <a href="https://pytorch.org/get-started/locally/">here</a>.
+  5. Install pytorch as outlined <a href="https://pytorch.org/get-started/locally/">here</a>.
   <a class="anchor" href="#5-install-pytorch-as-outlined-herehttpspytorchorgget-startedlocally">#</a>
 </h4>
 <h4 id="6-install-our-neuroglancer-scripts">
@@ -871,12 +859,10 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
 </h4>
 <ul>
 <li>
-<p>If not already installed on your system (check by running <code>mongod</code>), install 
-  <a href="https://docs.mongodb.com/manual/administration/install-community/">MongoDB</a>.</p>
+<p>If not already installed on your system (check by running <code>mongod</code>), install <a href="https://docs.mongodb.com/manual/administration/install-community/">MongoDB</a>.</p>
 </li>
 <li>
-<p>Start up the MongoDB service (refer to 
-  <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#run-mongodb-community-edition">documentation</a>):</p>
+<p>Start up the MongoDB service (refer to <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#run-mongodb-community-edition">documentation</a>):</p>
 <ul>
 <li>on Ubuntu:
 <pre tabindex="0"><code>bash sudo service mongod start
@@ -904,8 +890,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~; nodeenv omniboard_environment
 </span></span></code></pre></div><p>Activate the environment.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>source omniboard_environment/bin/activate
-</span></span></code></pre></div><p>Install 
-  <a href="https://vivekratnavel.github.io/omniboard/#/quick-start">omniboard</a>.</p>
+</span></span></code></pre></div><p>Install <a href="https://vivekratnavel.github.io/omniboard/#/quick-start">omniboard</a>.</p>
 <blockquote>
 <p>This may take a while.</p>
 </blockquote>
@@ -914,9 +899,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
   Optional: Download our data
   <a class="anchor" href="#optional-download-our-data">#</a>
 </h2>
-<p>The datasets in the publication are available in an 
-  <a href="https://open.quiltdata.com/b/asem-project/tree/datasets/">AWS bucket</a> and can be downloaded with the 
-  <a href="https://docs.quiltdata.com/api-reference/api">quilt3 API</a>.</p>
+<p>The datasets in the publication are available in an <a href="https://open.quiltdata.com/b/asem-project/tree/datasets/">AWS bucket</a> and can be downloaded with the <a href="https://docs.quiltdata.com/api-reference/api">quilt3 API</a>.</p>
 <h4 id="1-download-an-example-dataset-from-the-aws-bucket-cell-6">
   1. Download an example dataset from the AWS bucket: cell 6
   <a class="anchor" href="#1-download-an-example-dataset-from-the-aws-bucket-cell-6">#</a>
@@ -931,8 +914,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
 </span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> quilt3<span style="color:#f92672">.</span>Bucket(<span style="color:#e6db74">&#34;s3://asem-project&#34;</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># download</span>
 </span></span><span style="display:flex;"><span>b<span style="color:#f92672">.</span>fetch(<span style="color:#e6db74">&#34;datasets/cell_6/cell_6_example.zarr/&#34;</span>, <span style="color:#e6db74">&#34;cell_6/cell_6.zarr/&#34;</span>)
-</span></span></code></pre></div><p>We provide all datasets as 2d <code>.tiff</code> images as well as in 
-  <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>, which is more suitable for deep learning on 3D images. Above we only downloaded the <code>.zarr</code> format.</p>
+</span></span></code></pre></div><p>We provide all datasets as 2d <code>.tiff</code> images as well as in <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>, which is more suitable for deep learning on 3D images. Above we only downloaded the <code>.zarr</code> format.</p>
 <h4 id="2-explore-a-dataset">
   2. Explore a dataset
   <a class="anchor" href="#2-explore-a-dataset">#</a>
@@ -940,8 +922,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
 <p>Example: Cell 6 raw electron microscopy data, Endoplasmic Reticulum prediction and corresponding Endoplasmic Reticulum ground-truth annotation.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f cell_6/cell_6.zarr -d volumes/raw_equalized_0.02 volumes/predictions/er/segmentation volumes/labels/er
 </span></span></code></pre></div><p>Navigate to position <code>520, 1164, 2776</code> (z,y,x) to focus on the Endoplasmic Reticulum predictions. You can simply overwrite the coordinates on the top left to do so.</p>
-<p>If you are not familiar with inspecting 3D data with neuroglancer, you might want to have a look at this 
-  <a href="https://youtu.be/TwBTyWWnbxc?t=75">video tutorial</a>.</p>
+<p>If you are not familiar with inspecting 3D data with neuroglancer, you might want to have a look at this <a href="https://youtu.be/TwBTyWWnbxc?t=75">video tutorial</a>.</p>
 <blockquote>
 <p>Note: <code>neuroglancer</code> might not work in Safari. In this case, simply copy the link given by <code>neuroglancer</code> to Chrome or Firefox.</p>
 </blockquote>
@@ -965,8 +946,7 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
   <a class="anchor" href="#2-activate-the-python-environment">#</a>
 </h4>
 <blockquote>
-<p>In case you have not installed the python environment yet, refer to the 
-  <a href="/#Installation">installation instructions</a>.</p>
+<p>In case you have not installed the python environment yet, refer to the <a href="#Installation">installation instructions</a>.</p>
 </blockquote>
 <p>Before running python scripts, activate the <code>incasem</code> environment</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate incasem
@@ -974,29 +954,25 @@ In Finder, go to <code>Applications/Utilities</code>, right click on <code>Termi
   3. Conversion from <code>TIFF</code> to <code>zarr</code> format
   <a class="anchor" href="#3-conversion-from-tiff-to-zarr-format">#</a>
 </h4>
-<p>Convert the sequence of <code>.tif</code> images (3D stack) to 
-  <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>.</p>
+<p>Convert the sequence of <code>.tif</code> images (3D stack) to <a href="https://zarr.readthedocs.io/en/stable/"><code>.zarr</code> format</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 00_image_sequences_to_zarr.py -i ~/incasem/data/my_new_data -f ~/incasem/data/my_new_data.zarr
 </span></span></code></pre></div><blockquote>
 <p>To obtain documentation on how to use a script, run <code>python &lt;script_name&gt;.py -h</code>.</p>
 </blockquote>
-<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the 
-  <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
+<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 01_image_sequences_to_zarr_with_dask.py -i ~/incasem/data/my_new_data -f ~/incasem/data/my_new_data.zarr -d volumes/raw --resolution <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>
 </span></span></code></pre></div><h4 id="4-equalize-intensity-histogram-of-the-data">
   4. Equalize intensity histogram of the data
   <a class="anchor" href="#4-equalize-intensity-histogram-of-the-data">#</a>
 </h4>
-<p>Equalize the raw data with 
-  <a href="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">CLAHE (Contrast limited adaptive histogram equalization)</a>. The default clip limit is <code>0.02</code>.</p>
+<p>Equalize the raw data with <a href="https://en.wikipedia.org/wiki/Adaptive_histogram_equalization">CLAHE (Contrast limited adaptive histogram equalization)</a>. The default clip limit is <code>0.02</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 40_equalize_histogram.py -f ~/incasem/data/my_new_data.zarr -d volumes/raw -o volumes/raw_equalized_0.02
 </span></span></code></pre></div><h4 id="5-inspect-the-converted-data-with-neuroglancer">
   5. Inspect the converted data with <code>neuroglancer</code>:
   <a class="anchor" href="#5-inspect-the-converted-data-with-neuroglancer">#</a>
 </h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f ~/incasem/data/my_new_data.zarr -d /volumes/raw
-</span></span></code></pre></div><p>Refer to our 
-  <a href="/#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
+</span></span></code></pre></div><p>Refer to our <a href="#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
 <h2 id="prediction">
   Prediction
   <a class="anchor" href="#prediction">#</a>
@@ -1020,8 +996,7 @@ Here is an example, also available at <code>~/incasem/scripts/03_predict/data_co
 <blockquote>
 <p>Note that the offset in each <code>.zattr</code> file is defined in nanometers, while the shape in <code>.zarray</code> is defined in voxels.</p>
 </blockquote>
-<p>We assume the data to be in <code>~/incasem/data</code>, as defined 
-  <a href="scripts/03_predict/config_prediction.yaml">here</a>.</p>
+<p>We assume the data to be in <code>~/incasem/data</code>, as defined <a href="scripts/03_predict/config_prediction.yaml">here</a>.</p>
 <h4 id="2-choose-a-model">
   2. Choose a model
   <a class="anchor" href="#2-choose-a-model">#</a>
@@ -1077,8 +1052,7 @@ Here is an example, also available at <code>~/incasem/scripts/03_predict/data_co
   Optional:
   <a class="anchor" href="#optional">#</a>
 </h4>
-<p>If you have corresponding ground truth annotations, create a metric exclusion zone as 
-  <a href="/#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">described below</a>. For the example of predicting Endoplasmic Reticulum in cell 6 from above, put the metric exclusion zone in <code>cell_6/cell_6.zarr/volumes/metric_masks/er</code> and adapt <code>data_configs/example_cell6.json</code> to:</p>
+<p>If you have corresponding ground truth annotations, create a metric exclusion zone as <a href="#Prepare-your-own-ground-truth-annotations-for-fine-tuning-or-training">described below</a>. For the example of predicting Endoplasmic Reticulum in cell 6 from above, put the metric exclusion zone in <code>cell_6/cell_6.zarr/volumes/metric_masks/er</code> and adapt <code>data_configs/example_cell6.json</code> to:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Cell_6_example_roi_nickname&#34;</span>: {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;file&#34;</span>: <span style="color:#e6db74">&#34;cell_6/cell_6.zarr&#34;</span>,
@@ -1115,8 +1089,7 @@ Here is an example, also available at <code>~/incasem/scripts/03_predict/data_co
 </h2>
 <p>Example: Endoplasmic reticulum (ER) annotations.</p>
 <p>We assume that the available 3d pixelwise annotations are stored as a sequence of 2d <code>.tif</code> images in a directory and that the size of each <code>.tif</code> annotation image matches the size of the corresponding electron microscopy <code>.tif</code> image.</p>
-<p>Furthermore, we assume that you have already prepared the corresponding electron microscopy images as outlined 
-  <a href="/#Prepare-your-own-data-for-prediction">above</a>.</p>
+<p>Furthermore, we assume that you have already prepared the corresponding electron microscopy images as outlined <a href="#Prepare-your-own-data-for-prediction">above</a>.</p>
 <blockquote>
 <p>The minimal block size that our training pipeline is set up to process is <code>(204, 204, 204)</code> voxels.</p>
 </blockquote>
@@ -1135,8 +1108,7 @@ Here is an example, also available at <code>~/incasem/scripts/03_predict/data_co
   <a class="anchor" href="#2-activate-the-python-environment-1">#</a>
 </h4>
 <blockquote>
-<p>In case you have not installed the python environment yet, refer to the 
-  <a href="/#Installation">installation instructions</a>.</p>
+<p>In case you have not installed the python environment yet, refer to the <a href="#Installation">installation instructions</a>.</p>
 </blockquote>
 <p>Before running python scripts, activate the <code>incasem</code> environment</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda activate incasem
@@ -1144,18 +1116,15 @@ Here is an example, also available at <code>~/incasem/scripts/03_predict/data_co
   3. Conversion from <code>TIFF</code> to <code>zarr</code> format
   <a class="anchor" href="#3-conversion-from-tiff-to-zarr-format-1">#</a>
 </h4>
-<p>Convert the sequence of <code>.tif</code> annotations (3D stack) to 
-  <a href="https://zarr.readthedocs.io/en/stable/">.<code>zarr</code> format</a>.
+<p>Convert the sequence of <code>.tif</code> annotations (3D stack) to <a href="https://zarr.readthedocs.io/en/stable/">.<code>zarr</code> format</a>.
 In this example, we use</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 00_image_sequences_to_zarr.py -i ~/incasem/data/my_new_er_annotations -f ~/incasem/data/my_new_data.zarr -d volumes/labels/er --dtype uint32
 </span></span></code></pre></div><p>We assume the <code>.tif</code> file names are in the format <code>name_number.tif</code>, as encapsulated by the default regular expression <code>.*_(\d+).*\.tif$</code>. If you want to change it, add <code>-r your_regular_expression</code> to the line above.</p>
-<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the 
-  <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
+<p>If your datasets is hundreds of GB in size, try using the conversion script <code>01_image_sequences_to_zarr_with_dask.py</code>. You will need to install a different conda environment to work with <code>dask</code>, details directly in the <a href="scripts/01_data_formatting/01_image_sequence_to_zarr_with_dask.py">script</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python 01_image_sequences_to_zarr_with_dask.py -i ~/incasem/data/my_new_er_annotations -f ~/incasem/data/my_new_data.zarr -d volumes/labels_er --resolution <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span> --dtype uint32
 </span></span></code></pre></div><p>Inspect the converted data with <code>neuroglancer</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>neuroglancer -f ~/incasem/data/my_new_data.zarr -d volumes/raw volumes/labels/er
-</span></span></code></pre></div><p>Refer to our 
-  <a href="/#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
+</span></span></code></pre></div><p>Refer to our <a href="#2.-Explore-a-dataset">instructions</a> on how to use neuroglancer.</p>
 <p>If the position of the labels is wrong, you can correct the offset by directly editing the dataset attributes file on disk:</p>
 <pre tabindex="0"><code>cd ~/incasem/data/my_new_data.zarr/volumes/labels/er
 vim .zattrs
@@ -1187,8 +1156,7 @@ We will fine-tune the mitochondria model ID <code>1847</code>, which was trained
   0. Download training data
   <a class="anchor" href="#0-download-training-data">#</a>
 </h4>
-<p>If you haven&rsquo;t done so before, download <code>cell_3</code> from our published datasets as outlined in the section 
-  <a href="/#Optional-Download-our-data"><em>Download our data</em></a>.</p>
+<p>If you haven&rsquo;t done so before, download <code>cell_3</code> from our published datasets as outlined in the section <a href="#Optional-Download-our-data"><em>Download our data</em></a>.</p>
 <h4 id="1-create-a-fine-tuning-data-configuration-file">
   1. Create a fine-tuning data configuration file
   <a class="anchor" href="#1-create-a-fine-tuning-data-configuration-file">#</a>
@@ -1207,8 +1175,7 @@ Here is an example, also available at <code>~/incasem/scripts/02_train/data_conf
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Refer to the section 
-  <a href="/#Training"><em>Training</em></a> for a detailed walk-through of such a configuration file.</p>
+</span></span></code></pre></div><p>Refer to the section <a href="#Training"><em>Training</em></a> for a detailed walk-through of such a configuration file.</p>
 <h4 id="2-launch-the-fine-tune-training">
   2. Launch the fine-tune training
   <a class="anchor" href="#2-launch-the-fine-tune-training">#</a>
@@ -1246,8 +1213,7 @@ The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
 </h4>
 <p>Since we usually do not have any ground truth on the target cell that we fine-tuned for, we cannot rigorously pick the best model iteration.</p>
 <p>We find that for example with ground truth in a 2 um<!-- raw HTML omitted -->3<!-- raw HTML omitted --> region of interest, typically after 5,000 - 10,000 iterations the fine-tuning has converged. The training loss (visible in tensorboard) can serve as a proxy for picking a model iteration in said interval.</p>
-<p>Now you can use the fine-tuned model to generate predictions on the new target cell, as described in the section 
-  <a href="/#Prediction"><em>Prediction</em></a>.</p>
+<p>Now you can use the fine-tuned model to generate predictions on the new target cell, as described in the section <a href="#Prediction"><em>Prediction</em></a>.</p>
 <h2 id="training">
   Training
   <a class="anchor" href="#training">#</a>
@@ -1257,8 +1223,7 @@ The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
   0. Download training data
   <a class="anchor" href="#0-download-training-data-1">#</a>
 </h4>
-<p>Download <code>cell_1</code> and <code>cell_2</code> from our published datasets as outlined in the section 
-  <a href="/#Optional-Download-our-data"><em>Download our data</em></a>.</p>
+<p>Download <code>cell_1</code> and <code>cell_2</code> from our published datasets as outlined in the section <a href="#Optional-Download-our-data"><em>Download our data</em></a>.</p>
 <h4 id="1-prepare-the-data">
   1. Prepare the data
   <a class="anchor" href="#1-prepare-the-data">#</a>
@@ -1276,8 +1241,7 @@ This mask, which we refer to as <em>exclusion zone</em>, simply sets the pixels 
 <p>For running a training you need to create a configuration file in <code>JSON</code> format that specifies which data should be used.
 Here is an example, also available at <code>~/incasem/scripts/02_train/data_configs/example_train_er.json</code>:</p>
 <blockquote>
-<p>We assume the data to be in <code>~/incasem/data</code>, as defined 
-  <a href="scripts/02_train/config_training.yaml">here</a>.</p>
+<p>We assume the data to be in <code>~/incasem/data</code>, as defined <a href="scripts/02_train/config_training.yaml">here</a>.</p>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;cell_1_er&#34;</span>: {
@@ -1342,8 +1306,7 @@ Here is an example, also available at <code>~/incasem/scripts/02_train/data_conf
   4. Optional: Adapt the training configuration
   <a class="anchor" href="#4-optional-adapt-the-training-configuration">#</a>
 </h4>
-<p>The file 
-  <a href="scripts/02_train/config_training.yaml"><code>config_training.yaml</code></a> exposes a lot of parameters of the model training.</p>
+<p>The file <a href="scripts/02_train/config_training.yaml"><code>config_training.yaml</code></a> exposes a lot of parameters of the model training.</p>
 <p>Most importantly:</p>
 <ul>
 <li>If you would like to use data with a different resolution, apart from specifying in the data configuration files as outlined above, you need to adapt <code>data.voxel_size</code> in <code>config_training.yaml</code>.</li>
@@ -1383,8 +1346,7 @@ The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
   7. Pick a model for prediction
   <a class="anchor" href="#7-pick-a-model-for-prediction">#</a>
 </h4>
-<p>Using Omniboard, pick a model iteration where the validation loss and the validation F1 score have converged. Now use this model to generate predictions on new data, as described in the section 
-  <a href="/#Prediction"><em>Prediction</em></a>.</p>
+<p>Using Omniboard, pick a model iteration where the validation loss and the validation F1 score have converged. Now use this model to generate predictions on new data, as described in the section <a href="#Prediction"><em>Prediction</em></a>.</p>
 </article>
  
       
@@ -1395,13 +1357,6 @@ The log files on disk are stored in <code>~/incasem/training_runs</code>.</p>
 
 
 
-
-  <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs/Active%20Projects/Asem/Project.md" target="_blank" rel="noopener">
-      <img src="/svg/edit.svg" class="book-icon" alt="" />
-      <span>Edit this page</span>
-    </a>
-  </div>
 
 
 </div>

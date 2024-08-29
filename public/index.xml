@@ -20,7 +20,7 @@
       <link>http://localhost:1313/docs/active-projects/asem/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/active-projects/asem/project/</guid>
-      <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al. Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
+      <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
     </item>
     <item>
       <title>BioArchive</title>
@@ -34,7 +34,7 @@
       <link>http://localhost:1313/docs/active-projects/cryosamba/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/active-projects/cryosamba/project/</guid>
-      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom Kirchhausen CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
+      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom KirchhausenCryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
     </item>
     <item>
       <title>GitHub</title>
@@ -97,7 +97,7 @@
       <link>http://localhost:1313/docs/getstarted/gettingstartedattklab/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/getstarted/gettingstartedattklab/quickstart/</guid>
-      <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick( stock@tklab.hms.harvard.edu) and Catherine( Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid( help@sbgrid.</description>
+      <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick(stock@tklab.hms.harvard.edu) and Catherine(Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid(help@sbgrid.</description>
     </item>
     <item>
       <title>Lab Computing Site/CARE</title>

@@ -20,7 +20,7 @@
       <link>http://localhost:1313/docs/active-projects/cryosamba/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/active-projects/cryosamba/project/</guid>
-      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom Kirchhausen CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
+      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom KirchhausenCryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
     </item>
     <item>
       <title>From Scratch(Advanced)</title>
