@@ -1,5 +1,5 @@
 ---
-title: Start
+title: Getting Started with the TKLAB Compute
 type: docs
 ---
 

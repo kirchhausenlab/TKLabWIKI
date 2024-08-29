@@ -1,8 +1,9 @@
 ---
 title: Lab Computing Site
 type: docs
+weight: 1
 ---
 
 ## Lab Computing Site
 
-[**More Information On this Website**](https://sites.google.com/tklab.hms.harvard.edu/tkdataprocessing/home/1-getting-started?authuser=0)
+For more information on the lab computing site, please visit the [TKLAB Computing Site](https://sites.google.com/tklab.hms.harvard.edu/tkcomputingsite/home?authuser=0).

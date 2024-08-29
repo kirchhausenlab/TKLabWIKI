@@ -9,11 +9,18 @@
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Lab Computing Site</title>
+      <link>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</guid>
+      <description>Lab Computing Site # For more information on the lab computing site, please visit the TKLAB Computing Site.</description>
+    </item>
+    <item>
       <title>ASEM</title>
       <link>http://localhost:1313/docs/active-projects/asem/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/active-projects/asem/project/</guid>
-      <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al.Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
+      <description>Automated Segmentation of cellular substructures in Electron Microscopy (ASEM) # This repository contains the segmentation pipeline described in&#xA;Benjamin Gallusser, Giorgio Maltese, Giuseppe Di Caprio et al. Deep neural network automated segmentation of cellular structures in volume electron microscopy,Journal of Cell Biology, 2022.&#xA;Please cite the publication if you are using this code in your research.&#xA;Our semi-automated annotation tool from the same publication is available at https://github.com/kirchhausenlab/gc_segment.&#xA;Table of Contents # Installation Optional: Download our data Prepare your own data for prediction Prediction Prepare your own ground truth annotations for fine-tuning or training Fine-Tuning Training Installation # This package is written for machines with either a Linux or a MacOS operating system.</description>
     </item>
     <item>
       <title>BioArchive</title>
@@ -27,7 +34,7 @@
       <link>http://localhost:1313/docs/active-projects/cryosamba/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/active-projects/cryosamba/project/</guid>
-      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom KirchhausenCryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
+      <description>CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data # For Hardware Issues please refer to the Nvidia-CUDA section # For Software Issues please refer to the Python section, Using Conda Environment # This repository contains the denoising pipeline described in the following publication:&#xA;Jose Inacio Costa-Filho, Liam Theveny, Marilina de Sautu, Tom Kirchhausen CryoSamba: Self-Supervised Deep Volumetric Denoising for Cryo-Electron Tomography Data&#xA;Please cite this publication if you are using this code in your research.</description>
     </item>
     <item>
       <title>GitHub</title>
@@ -66,9 +73,9 @@
     </item>
     <item>
       <title>Access Resources Directly from Off-site with Key-Based SSH</title>
-      <link>http://localhost:1313/docs/labcomputingsite/care/ssh/</link>
+      <link>http://localhost:1313/docs/getstarted/ssh/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/care/ssh/</guid>
+      <guid>http://localhost:1313/docs/getstarted/ssh/</guid>
       <description>Accessing Resources Off-site with Key-Based SSH # Purpose # When accessing resources from off-site, such as running a Jupyter notebook on tkl1 or tkl3 or exploring data with Neuroglancer, it can be cumbersome to first SSH onto xtal200 and authenticate with 2FA. This guide will show you how to streamline this process by using key-based SSH, allowing you to access applications served by on-site resources in a single SSH step.</description>
     </item>
     <item>
@@ -86,11 +93,11 @@
       <description>Advanced instructions # Table of Contents # Installation 🐍 Training Setup Training 🛠️ Run Training 🚀 Visualization with TensorBoard 📈 Inference Setup Inference 🛠️ Run Inference 🚀 Installation # Open a terminal window and run conda create --name your-env-name python=3.11 -y to create the environment (replace your-env-name with a desired name). Activate the environment with conda activate your-env-name. In the future, you will have to activate the environment anytime you want to use CryoSamba.</description>
     </item>
     <item>
-      <title>Lab Computing Site</title>
-      <link>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</link>
+      <title>Getting Started with the TKLAB Compute</title>
+      <link>http://localhost:1313/docs/getstarted/gettingstartedattklab/quickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</guid>
-      <description>Lab Computing Site # More Information On this Website</description>
+      <guid>http://localhost:1313/docs/getstarted/gettingstartedattklab/quickstart/</guid>
+      <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick( stock@tklab.hms.harvard.edu) and Catherine( Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid( help@sbgrid.</description>
     </item>
     <item>
       <title>Lab Computing Site/CARE</title>
@@ -121,11 +128,11 @@
       <description>7. Post-tracking Processing # Introduction # In this section, we provide a list of codes developed for post-tracking analysis. The following procedures outline how to back up data from the scratch directory to /nfs/datasync4 and various post-processing techniques applied to the tracked data.&#xA;Data Backup After Processing # Name of the code: transfer_from_scratch_to_datasync.m&#xA;Once the data collected by the LLSMs has been deskewed and stored temporarily on /datasync4/tklab-llsm or /datasync4/AO-llsm, users can begin their processing, which includes detection, tracking, and post-tracking analysis.</description>
     </item>
     <item>
-      <title>References</title>
-      <link>http://localhost:1313/docs/labcomputingsite/references/references/</link>
+      <title>Remotely Access Machines/Access Compute</title>
+      <link>http://localhost:1313/docs/getstarted/remote_access/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/references/references/</guid>
-      <description>References # Jaqaman, K., Loerke, D., Mettlen, M. et al. (2008). Robust single-particle tracking in live-cell time-lapse sequences. Nature Methods, 5, 695–702. https://doi.org/10.1038/nmeth.1237&#xA;François Aguet, Costin N. Antonescu, Marcel Mettlen, Sandra L. Schmid, Gaudenz Danuser (2013). Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint. Developmental Cell. https://doi.org/10.1016/j.devcel.2013.06.019&#xA;Roudot, Philippe, Wesley R Legant, Qiongjing Zou, Kevin M Dean, Erik S Welf, Ana F David, Daniel W Gerlich, Reto Fiolka, Eric Betzig, Gaudenz Danuser.</description>
+      <guid>http://localhost:1313/docs/getstarted/remote_access/</guid>
+      <description>Access Remote Machines # The TKLAB has 10% of the total compute of Harvard Med with the following severs:&#xA;3 DGXs equipped with 24 Nvidia A100 GPUs, tkl1, tkl2, tkl3, tkl4, Datasync folders with terrabytes of capacity Scratch folders for developers In total having over 800 CPUs and 30 GPUs To access one of the machines, we have the following:&#xA;On the Harvard Ethernet Network: Run the following commands from your terminal ssh username@tkdgx3.</description>
     </item>
     <item>
       <title>SBGrid Wiki</title>
@@ -136,17 +143,10 @@
     </item>
     <item>
       <title>SLURM for the CPU Cluster</title>
-      <link>http://localhost:1313/docs/labcomputingsite/gettingstarted/slurm/</link>
+      <link>http://localhost:1313/docs/getstarted/gettingstartedattklab/slurm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/gettingstarted/slurm/</guid>
+      <guid>http://localhost:1313/docs/getstarted/gettingstartedattklab/slurm/</guid>
       <description>SLURM for the CPU Cluster # Overview # The Slurm Workload Manager, previously known as Simple Linux Utility for Resource Management (SLURM), is a free and open-source job scheduler for Linux and Unix-like systems. This tool is utilized to run jobs on the CPU cluster, particularly within Matlab. SLURM enables users to allocate exclusive or non-exclusive access to computer nodes for a specified time period, allowing them to perform computational work efficiently.</description>
-    </item>
-    <item>
-      <title>Start</title>
-      <link>http://localhost:1313/docs/labcomputingsite/gettingstarted/quickstart/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/gettingstarted/quickstart/</guid>
-      <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick(stock@tklab.hms.harvard.edu) and Catherine(Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid(help@sbgrid.</description>
     </item>
     <item>
       <title>Tracks Visualizer - Matlab</title>
@@ -154,6 +154,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/labcomputingsite/tracking/lab_view/</guid>
       <description>8. Tracks Visualizer - Matlab # Introduction # Visualizing 3D data can be challenging, but several tools are available to help browse data and tracks effectively. These tools allow users to view 2D projections of the data in XY, XZ, and YZ planes, facilitating easier analysis of tracked data.&#xA;Tools and Commands # Commands:&#xA;GU_calcImageProjections.m GU_cme3d2dViewer.m Usage:&#xA;Load and Project Data:&#xA;Use the following commands to load the 3D data and calculate the 2D projections:</description>
+    </item>
+    <item>
+      <title>Websites, References, Githubs</title>
+      <link>http://localhost:1313/docs/labcomputingsite/references/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/references/references/</guid>
+      <description>References # Jaqaman, K., Loerke, D., Mettlen, M. et al. (2008). Robust single-particle tracking in live-cell time-lapse sequences. Nature Methods, 5, 695–702. https://doi.org/10.1038/nmeth.1237&#xA;François Aguet, Costin N. Antonescu, Marcel Mettlen, Sandra L. Schmid, Gaudenz Danuser (2013). Advances in Analysis of Low Signal-to-Noise Images Link Dynamin and AP2 to the Functions of an Endocytic Checkpoint. Developmental Cell. https://doi.org/10.1016/j.devcel.2013.06.019&#xA;Roudot, Philippe, Wesley R Legant, Qiongjing Zou, Kevin M Dean, Erik S Welf, Ana F David, Daniel W Gerlich, Reto Fiolka, Eric Betzig, Gaudenz Danuser.</description>
     </item>
   </channel>
 </rss>
