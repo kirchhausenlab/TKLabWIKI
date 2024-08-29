@@ -2,7 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'TKLab Wiki'
 theme = 'hugo-book'
-disqusShortname = "TKLAB"
 [params]
 # (Optional, default light) Sets color theme: light, dark or auto.
 # Theme 'auto' switches between dark and light modes based on browser/os preferences
