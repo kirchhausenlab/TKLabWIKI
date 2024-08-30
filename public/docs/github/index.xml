@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TKLab Wiki</title>
-    <link>http://localhost:57929/docs/github/</link>
+    <link>http://localhost:1313/docs/github/</link>
     <description>Recent content on TKLab Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57929/docs/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub</title>
-      <link>http://localhost:57929/docs/github/github/</link>
+      <link>http://localhost:1313/docs/github/github/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57929/docs/github/github/</guid>
-      <description>Kirchhausenlab GitHub # All the code and software developed by the Kirchhausen lab can be found on our GitHub page.&#xA;Note: You will need to be a member of the Kirchhausen lab GitHub organization to access the repositories.</description>
+      <guid>http://localhost:1313/docs/github/github/</guid>
+      <description>[Kirchhausenlab GitHub] # -Link to GitHub&#xA;All the code and software developed by the Kirchhausen lab can be found on our GitHub page.&#xA;Note: You will need to be a member of the Kirchhausen lab GitHub organization to access the repositories.</description>
     </item>
   </channel>
 </rss>

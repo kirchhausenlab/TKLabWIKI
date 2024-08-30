@@ -111,3 +111,65 @@ The **Content-Aware image REstoration (CARE)** package is a Python-based routine
 ### SSH Tunneling from Off-site
 
 If you need to access the Jupyter notebook from off-site, first SSH into `xtal200.harvard.edu`. Follow the detailed instructions provided [here](https://sites.google.com/tklab.hms.harvard.edu/tkdataprocessing/home/3-care/key-based-ssh?authuser=0) to set up the tunnel.
+
+### Running Jupyter on a Remote Machine via SSH
+
+1. **Connect to the Remote Machine:**
+   The machines dedicated to CARE are `tkl1` and `tkl3`. You can also use the `tkhpc*` machines, but they have smaller GPU memory, which might result in longer processing times. Connect to the remote machine via SSH:
+
+   ```bash
+   ssh username@hostname
+   ```
+
+2. **Start a tmux Session (Recommended):**
+   Open a tmux session to keep your environment running even if the connection drops. Then, activate the Conda environment:
+
+   ```bash
+   tmux
+   conda activate care
+   ```
+
+3. **Run Jupyter Notebook on a Specific Port:**
+   Start the Jupyter notebook server on a specified port (e.g., 1234):
+
+   ```bash
+   jupyter notebook --no-browser --port 1234
+   ```
+
+   Copy the generated link (e.g., `http://localhost:1234/...`) for later use.
+
+4. **Set Up SSH Tunneling:**
+   In a new terminal tab on your local machine, set up SSH tunneling to forward the port from the remote machine to your local machine:
+
+   ```bash
+   ssh -NL 1234:localhost:1234 username@hostname
+   ```
+
+   Keep this shell open. Ensure the port number matches the one used in the Jupyter link.
+
+5. **Access Jupyter Notebook:**
+   Paste the copied link into your local web browser to access the Jupyter notebook running on the remote machine.
+
+### SSH Tunneling from Off-site
+
+If you need to access the Jupyter notebook from off-site, first SSH into `xtal200.harvard.edu`. Follow the detailed instructions provided [here](https://sites.google.com/tklab.hms.harvard.edu/tkdataprocessing/home/3-care/key-based-ssh?authuser=0) to set up the tunnel.
+
+### Using CARE Analysis
+
+1. Open the Jupyter notebook interface in your web browser.
+2. Navigate to the 'care' folder, then to 'notebook'.
+3. Use `2_train_model_LLSM.ipynb` to train your model.
+4. Use `3_predict_datasets_LLSM.ipynb` to predict data based on the trained model.
+
+Remember to log out when done by killing the tmux session:
+
+```bash
+tmux kill-session
+```
+
+### Tips
+
+- To check GPU availability, use the command `nvidia-smi`.
+- To continuously monitor GPU usage, use `watch -n2 nvidia-smi`.
+
+For more detailed instructions or troubleshooting, please consult the lab's internal documentation or contact the IT support team.
