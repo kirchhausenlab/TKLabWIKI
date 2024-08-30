@@ -27,13 +27,13 @@ Patrick will be also in charge to create an email addres on the domain tklab.hms
 
 **Machines accessible both on-line and on-site (from Dreamspace)**
 
-In the following spreadsheet we list the machines accessible both online and on-site. On all machined both Matlab and Fiji are installed.
+In the following spreadsheet we list the machines accessible both online and on-site. On all machine both Matlab and Fiji are installed.
 
 `https://docs.google.com/spreadsheets/d/1y-CXGBtFuOFbws3o7nWxWLtgcu1jEGh0M_QC-VAO9so/edit`
 
 **Machines accessible online**
 
-The following machines are only accessible via ssh or remote desktop (see above). On all machined both Matlab and Fiji are installed.
+The following machines are only accessible via ssh or remote desktop (see above). On all machine both Matlab and Fiji are installed.
 
 `https://docs.google.com/spreadsheets/d/1qtBn-swzXb_8CqOBhnKE7kEH1oCFwBqPNZ330fdrv-g/edit?usp=drive_open&ouid=104608780451973055923`
 

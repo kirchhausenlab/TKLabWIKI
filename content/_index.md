@@ -4,36 +4,35 @@ The TKLAB is a research lab at Harvard Medical School. This wiki is a collection
 
 ## Table of Contents
 
-- [Active Projects](/docs/Active%20Projects/)
-  - [Asem](/docs/Active%20Projects/Asem/)
-  - [CARE](/docs/Active%20Projects/CARE/)
-  - [Cryosamba](/docs/Active%20Projects/Cryosamba/)
-  - [Image Recognition](/docs/Active%20Projects/Image%20Recognition/)
-- [GitHub](/docs/GitHub/)
-- [Lab Computing Site](/docs/LabComputingSite/)
-  - [CARE](/docs/LabComputingSite/CARE/)
-  - [Getting Started at TKLAB](/docs/LabComputingSite/GettingStartedAtTKLAB/)
-  - [LLSM AO-LLS (MOSAIC)](</docs/LabComputingSite/LLSM_AO-LLS_(MOSAIC)/>)
-  - [References](/docs/LabComputingSite/References/)
-  - [Tracking](/docs/LabComputingSite/Tracking/)
-  - [Nvidia-Cuda](/docs/LabComputingSite/Nvidia-Cuda/)
-  - [Python](/docs/LabComputingSite/Python/)
-  - [SBGRID WIKI](/docs/LabComputingSite/SBGRID_WIKI/)
-- [Menu](/docs/menu/)
+- Active Projects
+  - [ASEM](/docs/Active_Projects/ASEM/project)
+  - [CARE](/docs/Active_Projects/CARE/)
+  - [Cryosamba](/docs/Active_Projects/Cryosamba/paper)
+  - [Image Recognition](/docs/Active_Projects/Image_Recognition/)
+- [GitHub](/docs/GitHub/github)
+- Lab Computing Site
+  - [CARE](/docs/LabComputingSite/CARE/care)
+  - [Getting Started at TKLAB](/docs/LabComputingSite/GettingStartedAtTKLAB/quickstart/)
+  - [LLSM AO-LLS (MOSAIC)](/docs/LabComputingSite/llsm_ao-lls_mosaic/llsm/)
+  - [References](/docs/LabComputingSite/References/references/)
+  - [Tracking](/docs/LabComputingSite/Tracking/detection_and_tracking/)
+  - [Nvidia-Cuda](/docs/LabComputingSite/Nvidia-Cuda/deeplearningsetup/)
+  - [Python](/docs/LabComputingSite/Python/python-virtual-environment/)
+  - [SBGRID WIKI](/docs/LabComputingSite/SBGRID_WIKI/sbgrid/)
 
 ## Access Compute Resources
 
 To access the TKLAB compute resources, you can follow the guides below:
 
 - [Remotely Access Machines](/docs/LabComputingSite/remote_access/)
-- [SLURM](/docs/LabComputingSite/SLURM/)
+- [SLURM](/docs/getstarted/gettingstartedattklab/slurm/)
 - [Quickstart](/docs/LabComputingSite/GettingStartedAtTKLAB/Quickstart/)
 
 ## Troubleshooting with SBGRID
 
 To troubleshoot issues with SBGRID, you can follow the guides below:
 
-- [SBGRID Wiki](/docs/LabComputingSite/SBGRID_WIKI/)
+- [SBGRID WIKI](/docs/LabComputingSite/SBGRID_WIKI/sbgrid/)
 
 Email help@sbgrid.org for further assistance.
 
@@ -41,12 +40,16 @@ Email help@sbgrid.org for further assistance.
 
 To learn more about GitHub, you can follow the guides below:
 
-- [GitHub](/docs/GitHub/)
-- [GitHub Pages](/docs/GitHub/github_pages/)
+- [GitHub](/docs/GitHub/github)
 
 ## Python
 
 To learn more about Python, you can follow the guides below:
 
-- [Python](/docs/LabComputingSite/Python/)
-- [Python Virtual Environment](/docs/LabComputingSite/Python/python-virtual-environment/)
+- [Python](/docs/LabComputingSite/Python/python-virtual-environment/)
+
+## Nvidia
+
+To learn about using your Nvidia-GPU compute wisely and docs, follow the guide below:
+
+- [Nvidia-Cuda](/docs/LabComputingSite/Nvidia-Cuda/deeplearningsetup/)
