@@ -79,11 +79,18 @@
       <description>Accessing Resources Off-site with Key-Based SSH # Purpose # When accessing resources from off-site, such as running a Jupyter notebook on tkl1 or tkl3 or exploring data with Neuroglancer, it can be cumbersome to first SSH onto xtal200 and authenticate with 2FA. This guide will show you how to streamline this process by using key-based SSH, allowing you to access applications served by on-site resources in a single SSH step.</description>
     </item>
     <item>
+      <title>Commands to determine compute</title>
+      <link>http://localhost:1313/docs/our_compute_capabilities/commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/our_compute_capabilities/commands/</guid>
+      <description>CPU Information # Run the following command to get information about the CPU:&#xA;lscpu | grep -e &amp;#34;^CPU(s)&amp;#34; -e &amp;#34;Thread(s)&amp;#34; -e &amp;#34;Core(s)&amp;#34; -e &amp;#34;Socket(s)&amp;#34; -e &amp;#34;^CPU family&amp;#34; -e &amp;#34;Model&amp;#34; -e &amp;#34;Model name&amp;#34; -e &amp;#34;cache&amp;#34; GPU Information # Run the following command to get information about the GPU:&#xA;nvidia-smi --query-gpu=index,utilization.gpu,memory.free,memory.total,memory.used --format=csv nvidia-smi -L System Information # Run the following command to get information about the system:&#xA;free -h Disk Information # Run the following command to get information about the disk:</description>
+    </item>
+    <item>
       <title>Computation</title>
       <link>http://localhost:1313/docs/our_compute_capabilities/computation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/our_compute_capabilities/computation/</guid>
-      <description>Our Compute Capabilities # 3 x NVIDIA DGX A100 # Our lab has three NVIDIA DGX A100 systems, each with the following specifications:&#xA;CPU Information # CPU(s),256 Thread(s) per core,2 Core(s) per socket,64 Socket(s),2 CPU Family,23 Model,49&#xA;Memory Information # L1d Cache,4 L1i Cache,4 L2 Cache,64 L3 Cache,512&#xA;GPU Information # GPU,GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-dea86db9-8b18-0785-912e-0cd7c365ebdd) GPU 1: NVIDIA A100-SXM4-40GB (UUID: GPU-4fbb6ffc-aa85-14bc-5dc6-6f4078927b72) GPU 2: NVIDIA A100-SXM4-40GB (UUID: GPU-91964961-3010-9dbc-262e-0a383a42e457) GPU 3: NVIDIA A100-SXM4-40GB (UUID: GPU-1ee21c93-0fbe-31fc-82f2-fbb6e0291e7a) GPU 4: NVIDIA A100-SXM4-40GB (UUID: GPU-712321e3-5a60-95f8-0762-d8e1017239d0) GPU 5: NVIDIA A100-SXM4-40GB (UUID: GPU-ff394415-d24d-8b0a-bb56-80a667851ca3) GPU 6: NVIDIA A100-SXM4-40GB (UUID: GPU-3b8e3a00-cb2f-4d61-8223-cd1aac7f6f1c) GPU 7: NVIDIA A100-SXM4-40GB (UUID: GPU-13c54766-2328-c07d-455d-47ce4766928b) GPU Utilization,99,99,100,99,100,99,0,0, Total Memory,2.</description>
+      <description>Our Compute Capabilities # Summary of the compute capabilities of our lab&amp;rsquo;s systems:&#xA;System CPU(s) Thread(s) per core Core(s) per socket Socket(s) CPU Family Model Memory GPU Disk NVIDIA DGX A100 256 2 64 2 23 49 2.0Ti 8 x NVIDIA A100-SXM4-40GB 91G / 1.8T TKL1 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL2 32 2 8 2 6 85 502Gi 1 x Quadro RTX 8000 / TKL3 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL4 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKhpc 64 2 8 4 6 62 503Gi 1 x Quadro K6000 / Excluding the NVIDIA DGX A100, we have a total of 192 CPUs CORES, with 8 cores per socket and 2 threads per core.</description>
     </item>
     <item>
       <title>Detection and Tracking</title>
@@ -154,6 +161,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/docs/getstarted/gettingstartedattklab/slurm/</guid>
       <description>SLURM for the CPU Cluster # Overview # The Slurm Workload Manager, previously known as Simple Linux Utility for Resource Management (SLURM), is a free and open-source job scheduler for Linux and Unix-like systems. This tool is utilized to run jobs on the CPU cluster, particularly within Matlab. SLURM enables users to allocate exclusive or non-exclusive access to computer nodes for a specified time period, allowing them to perform computational work efficiently.</description>
+    </item>
+    <item>
+      <title>SLURM Nodes</title>
+      <link>http://localhost:1313/docs/our_compute_capabilities/slurm_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/our_compute_capabilities/slurm_/</guid>
+      <description>SLURM Information # Summary of SLURM Nodes # TKL1-4 and DGX1-3 are not part of SLURM Below is a summary of the nodes:&#xA;Node tkl1 # Cores: 32 (8 cores per socket, 2 sockets) Memory: 514646 MB State: DOWN* Reason: Not in queue Node tkl2 # Cores: 32 (8 cores per socket, 2 sockets) Memory: 514646 MB State: DOWN*+DRAIN Reason: Not in queue Node tkl3 # Cores: 32 (8 cores per socket, 2 sockets) Memory: 514638 MB State: DOWN*+DRAIN Reason: OK Node tkv1 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv2 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv3 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv4 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv5 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv6 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv7 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE Partitions: tk-cpu Node tkv8 # Cores: 48 (12 cores per socket, 2 sockets) Memory: 1020251 MB State: IDLE+DRAIN Reason: Cause Node tkv9 # Cores: 80 (20 cores per socket, 2 sockets) Memory: 1544769 MB State: IDLE Partitions: tk-cpu Node tkv10 # Cores: 80 (20 cores per socket, 2 sockets) Memory: 1544769 MB State: IDLE Partitions: tk-cpu Node tkv11 # Cores: 80 (20 cores per socket, 2 sockets) Memory: 1544769 MB State: IDLE Partitions: tk-cpu Scripts # Determine the specs of each node in the cluster.</description>
     </item>
     <item>
       <title>Tracks Visualizer - Matlab</title>

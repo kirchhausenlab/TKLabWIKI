@@ -16,7 +16,11 @@ Summary of the compute capabilities of our lab's systems:
 | [TKL4](#tkl4)                           | 32     | 2                  | 8                  | 2         | 6          | 85    | 502Gi  | 3 x Quadro RTX 8000       | /          |
 | [TKhpc](#tkhpc)                         | 64     | 2                  | 8                  | 4         | 6          | 62    | 503Gi  | 1 x Quadro K6000          | /          |
 
+Excluding the NVIDIA DGX A100, we have a total of 192 CPUs CORES, with 8 cores per socket and 2 threads per core.
+
 ## **3 x NVIDIA DGX A100**
+
+**FAQ: "We have not integrated TKL1-4 into the SLURM system, nor our DGX systems. Sharing demanding jobs in a single DGX poses a risk for crashes. To mitigate this, I have compartmentalized our resources. We have given away our first DGX to Steve and his team, which is located in their lab or EM suite. Some individuals have access to our DGX-100, specifically #3, although we have priority in its use. Additionally, We have decided to exclusively use our DGX systems for our AI work, such as Jose et al. This includes ASEM and cryoSAMBA, but does not encompass CARE runs."**
 
 Our lab has three NVIDIA DGX A100 systems, each with the following specifications:
 
