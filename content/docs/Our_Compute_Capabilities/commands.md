@@ -36,6 +36,12 @@ Run the following command to get information about the disk:
 df -h | grep -e "udev" -e "tmpfs" -e "^/dev/md0"
 ```
 
+## SLURM Information
+
+```
+sinfo -N all --long
+```
+
 ## Script
 
 The following script can be used to get all the information at once and store it in a markdown format:

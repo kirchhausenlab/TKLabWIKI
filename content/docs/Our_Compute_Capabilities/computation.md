@@ -320,3 +320,21 @@ Our lab has three NVIDIA DGX A100 systems, each with the following specification
 - This system is powered by 64 CPUs, with 8 cores per socket and 2 threads per core.
 - The system's memory is 503Gi, with 2.6Gi currently in use.
 ```
+
+## **SLURM Nodes**
+
+```
+NODELIST NODES PARTITION STATE CPUS S:C:T MEMORY TMP_DISK WEIGHT AVAIL_FE REASON
+tkv1 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv2 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv3 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv4 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv5 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv6 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv7 1 tk-cpu* idle 48 2:12:2 102025 0 1 (null) none
+tkv8 1 tk-cpu* drained 48 2:12:2 102025 0 1 (null) cause
+tkv9 1 tk-cpu* idle 80 2:20:2 154476 0 1 (null) none
+tkv10 1 tk-cpu* idle 80 2:20:2 154476 0 1 (null) none
+tkv11 1 tk-cpu* idle 80 2:20:2 154476 0 1 (null) none
+tkv12 1 tk-cpu* idle 80 2:20:2 154476 0 1 (null) none
+```
