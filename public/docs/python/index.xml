@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TKLab Wiki</title><link>http://localhost:1313/docs/python/</link><description>Recent content on TKLab Wiki</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/docs/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Poetry: Python Dependency Management Made Easy</title><link>http://localhost:1313/docs/python/production_poetry/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/python/production_poetry/</guid><description>Poetry # Explanation # Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
-Poetry uses a file called pyproject.toml to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.</description></item><item><title>Using Conda Environment</title><link>http://localhost:1313/docs/python/conda_env/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/python/conda_env/</guid><description>Using Conda Environment # Explanation # Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.
-Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts.</description></item><item><title>Using Python Without Breaking Your Local Machine!</title><link>http://localhost:1313/docs/python/python-virtual-environment/</link><pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate><guid>http://localhost:1313/docs/python/python-virtual-environment/</guid><description>Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.
-Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TKLab Wiki</title>
+    <link>http://localhost:1313/docs/python/</link>
+    <description>Recent content on TKLab Wiki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poetry: Python Dependency Management Made Easy</title>
+      <link>http://localhost:1313/docs/python/production_poetry/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/python/production_poetry/</guid>
+      <description>Poetry # Explanation # Poetry is a tool for dependency management and packaging in Python. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.&#xA;Poetry uses a file called pyproject.toml to declare your project dependencies. It then creates a virtual environment and installs the specified dependencies in that environment. Poetry also locks the versions of your dependencies to ensure reproducibility.</description>
+    </item>
+    <item>
+      <title>Using Conda Environment</title>
+      <link>http://localhost:1313/docs/python/conda_env/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/python/conda_env/</guid>
+      <description>Using Conda Environment # Explanation # Conda is a popular package and environment management system that allows you to create and manage isolated environments for different projects. This guide will walk you through the steps of using Conda to create and manage environments.&#xA;Conda works by creating isolated environments that contain their own set of packages and dependencies. This allows you to work on different projects with different requirements without conflicts.</description>
+    </item>
+    <item>
+      <title>Using Python Without Breaking Your Local Machine!</title>
+      <link>http://localhost:1313/docs/python/python-virtual-environment/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/python/python-virtual-environment/</guid>
+      <description>Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.&#xA;Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.</description>
+    </item>
+  </channel>
+</rss>

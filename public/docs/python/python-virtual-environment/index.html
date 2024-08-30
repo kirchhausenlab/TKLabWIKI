@@ -1,26 +1,921 @@
-<!doctype html><html lang=en-us dir=ltr><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.
-Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="http://localhost:1313/docs/python/python-virtual-environment/"><meta property="og:site_name" content="TKLab Wiki"><meta property="og:title" content="Using Python Without Breaking Your Local Machine!"><meta property="og:description" content="Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.
-Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="docs"><meta property="article:published_time" content="2024-08-15T00:00:00+00:00"><meta property="article:modified_time" content="2024-08-15T00:00:00+00:00"><title>Using Python Without Breaking Your Local Machine! | TKLab Wiki</title>
-<link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png><link rel=canonical href=http://localhost:1313/docs/python/python-virtual-environment/><link rel=stylesheet href=/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css integrity="sha256-MJt+0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin=anonymous><script defer src=/fuse.min.js></script><script defer src=/en.search.min.6b5aade2fcc744bb513ba9402b1cd52e56abf7fd7d17789a7a8aca9ef89adc6e.js integrity="sha256-a1qt4vzHRLtRO6lAKxzVLlar9/19F3iaeorKnvia3G4=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>TKLab Wiki</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul><li class=book-section-flat><span>Active Projects</span><ul><li><input type=checkbox id=section-ae380f29dc58ec8e80fcf8faf6421ca8 class=toggle>
-<label for=section-ae380f29dc58ec8e80fcf8faf6421ca8 class="flex justify-between"><a role=button>Asem</a></label><ul><li><a href=/docs/active_projects/asem/project/>ASEM</a></li></ul></li><li><input type=checkbox id=section-493a983c343edf43514e9c11e5e3630b class=toggle>
-<label for=section-493a983c343edf43514e9c11e5e3630b class="flex justify-between"><a role=button>Cryosamba</a></label><ul><li><a href=/docs/active_projects/cryosamba/paper/>BioArchive</a></li><li><a href=/docs/active_projects/cryosamba/project/>CryoSamba Main</a></li><li><a href=/docs/active_projects/cryosamba/advanced/>From Scratch(Advanced)</a></li></ul></li><li><input type=checkbox id=section-7716aa642ec91bca88029d7c11fbd8b8 class=toggle>
-<label for=section-7716aa642ec91bca88029d7c11fbd8b8 class="flex justify-between"><a role=button>Care</a></label><ul></ul></li><li><input type=checkbox id=section-39aced8a91bc6b31a6d670db5a5ce798 class=toggle>
-<label for=section-39aced8a91bc6b31a6d670db5a5ce798 class="flex justify-between"><a role=button>Image Recognition</a></label><ul></ul></li></ul></li><li class=book-section-flat><span>Git Hub</span><ul><li><a href=/docs/github/github/>GitHub</a></li></ul></li><li class=book-section-flat><span>Nvidia Cuda</span><ul><li><a href=/docs/nvidia-cuda/deeplearningsetup/>NVIDIA GPU and CUDA Setup Guide</a></li></ul></li><li class=book-section-flat><span>Python</span><ul><li><a href=/docs/python/production_poetry/>Poetry: Python Dependency Management Made Easy</a></li><li><a href=/docs/python/conda_env/>Using Conda Environment</a></li><li><a href=/docs/python/python-virtual-environment/ class=active>Using Python Without Breaking Your Local Machine!</a></li></ul></li><li class=book-section-flat><span>Get Started</span><ul><li><input type=checkbox id=section-44c7adc40db3ed089d926948e95a1066 class=toggle>
-<label for=section-44c7adc40db3ed089d926948e95a1066 class="flex justify-between"><a role=button>Getting Started at Tklab</a></label><ul><li><a href=/docs/getstarted/gettingstartedattklab/quickstart/>Getting Started with the TKLAB Compute</a></li><li><a href=/docs/getstarted/gettingstartedattklab/slurm/>SLURM for the CPU Cluster</a></li></ul></li><li><a href=/docs/getstarted/ssh/>Access Resources Directly from Off-site with Key-Based SSH</a></li><li><a href=/docs/getstarted/remote_access/>Remotely Access Machines/Access Compute</a></li></ul></li><li class=book-section-flat><span>Lab Computing Site</span><ul><li><a href=/docs/labcomputingsite/labcomputingsite/>Lab Computing Site</a></li><li><input type=checkbox id=section-9bcf71ebb511752b18ff49427dd20961 class=toggle>
-<label for=section-9bcf71ebb511752b18ff49427dd20961 class="flex justify-between"><a role=button>Care</a></label><ul><li><a href=/docs/labcomputingsite/care/care/>Lab Computing Site/CARE</a></li></ul></li><li><input type=checkbox id=section-d35f86211aac97dd8c772bdfa9849424 class=toggle>
-<label for=section-d35f86211aac97dd8c772bdfa9849424 class="flex justify-between"><a role=button>Llsm Ao Lls ( Mosaic)</a></label><ul><li><a href=/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/>LLSM</a></li></ul></li><li><input type=checkbox id=section-a98955eae6f10c3e4266a56732f9aa1d class=toggle>
-<label for=section-a98955eae6f10c3e4266a56732f9aa1d class="flex justify-between"><a role=button>References</a></label><ul><li><a href=/docs/labcomputingsite/references/references/>Websites, References, Githubs</a></li></ul></li><li><input type=checkbox id=section-cf9d1b781624480f957fe4d61495c4ba class=toggle>
-<label for=section-cf9d1b781624480f957fe4d61495c4ba class="flex justify-between"><a role=button>Tracking</a></label><ul><li><a href=/docs/labcomputingsite/tracking/detection_and_tracking/>Detection and Tracking</a></li><li><a href=/docs/labcomputingsite/tracking/post-tracking/>Post-tracking Processing</a></li><li><a href=/docs/labcomputingsite/tracking/lab_view/>Tracks Visualizer - Matlab</a></li></ul></li><li><a href=/docs/labcomputingsite/neuroglancer/>Neuroglancer</a></li></ul></li><li class=book-section-flat><span>Sbgrid Wiki</span><ul><li><a href=/docs/sbgrid_wiki/sbgrid/>SBGrid Wiki</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu>
-</label><strong>Using Python Without Breaking Your Local Machine!</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#virtual-environment>Virtual Environment</a><ul><li><a href=#explanation>Explanation</a></li><li><a href=#benefits>Benefits</a></li></ul></li><li><a href=#creating-a-python-virtual-environment>Creating a Python Virtual Environment</a><ul><li><a href=#steps-to-create-a-virtual-environment>Steps to Create a Virtual Environment</a></li></ul></li></ul></nav></aside></header><article class="markdown book-article"><h2 id=virtual-environment>Virtual Environment
-<a class=anchor href=#virtual-environment>#</a></h2><h3 id=explanation>Explanation
-<a class=anchor href=#explanation>#</a></h3><p>A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.</p><p>Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other. It allows you to create an isolated environment with its own set of libraries, dependencies, and configurations.</p><p>Why is this useful? Well, sometimes different projects require different versions of libraries or dependencies. For example, one project might need an older version of a library, while another project requires a newer version. Without a virtual environment, these projects might conflict with each other and cause issues.</p><p>With a virtual environment, you can create a separate workspace for each project, ensuring that the specific versions of libraries and dependencies needed for that project are installed and used. This way, you can work on multiple projects simultaneously without worrying about conflicts or compatibility issues.</p><h3 id=benefits>Benefits
-<a class=anchor href=#benefits>#</a></h3><ul><li><strong>Project Isolation</strong>: No interference between projects.</li><li><strong>Version Control</strong>: Maintain different versions of libraries for different projects.</li><li><strong>Easy Collaboration</strong>: Share your environment setup easily with others.</li></ul><h2 id=creating-a-python-virtual-environment>Creating a Python Virtual Environment
-<a class=anchor href=#creating-a-python-virtual-environment>#</a></h2><h3 id=steps-to-create-a-virtual-environment>Steps to Create a Virtual Environment
-<a class=anchor href=#steps-to-create-a-virtual-environment>#</a></h3><ol><li><p><strong>Install Python</strong>: Make sure Python is installed. Use <code>python3</code> for Python 3.x.</p></li><li><p><strong>Create a Virtual Environment</strong>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>python3 -m venv myenv
-</span></span></code></pre></div></li><li><p><strong>Activate the Virtual Environment</strong>:</p><ul><li><h1 id=windows>Windows
-<a class=anchor href=#windows>#</a></h1>myenv\Scripts\activate</li><li><h1 id=maclinux>Mac/Linux
-<a class=anchor href=#maclinux>#</a></h1>source myenv/bin/activate</li></ul></li><li><p><strong>Install Packages</strong>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>pip install package_name
-</span></span></code></pre></div></li><li><p><strong>Deactivate the Environment</strong>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>deactivate
-</span></span></code></pre></div></li></ol></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#virtual-environment>Virtual Environment</a><ul><li><a href=#explanation>Explanation</a></li><li><a href=#benefits>Benefits</a></li></ul></li><li><a href=#creating-a-python-virtual-environment>Creating a Python Virtual Environment</a><ul><li><a href=#steps-to-create-a-virtual-environment>Steps to Create a Virtual Environment</a></li></ul></li></ul></nav></div></aside></main></body></html>
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.
+Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/python/python-virtual-environment/">
+  <meta property="og:site_name" content="TKLab Wiki">
+  <meta property="og:title" content="Using Python Without Breaking Your Local Machine!">
+  <meta property="og:description" content="Virtual Environment # Explanation # A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.
+Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-08-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-08-15T00:00:00+00:00">
+<title>Using Python Without Breaking Your Local Machine! | TKLab Wiki</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" >
+<link rel="canonical" href="http://localhost:1313/docs/python/python-virtual-environment/">
+<link rel="stylesheet" href="/book.min.309b7ed028807cdb68d8d61e26d609f48369c098dbf5e4d8c0dcf4cdf49feafc.css" integrity="sha256-MJt&#43;0CiAfNto2NYeJtYJ9INpwJjb9eTYwNz0zfSf6vw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.31c3552aeb38717b0eff0d2b40933db9ac052a4679ed8dee3f97a12eff22d7d4.js" integrity="sha256-McNVKus4cXsO/w0rQJM9uawFKkZ57Y3uP5ehLv8i19Q=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>TKLab Wiki</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Active Projects</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ae380f29dc58ec8e80fcf8faf6421ca8" class="toggle"  />
+    <label for="section-ae380f29dc58ec8e80fcf8faf6421ca8" class="flex justify-between">
+      <a role="button" class="">Asem</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active_projects/asem/project/" class="">ASEM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-493a983c343edf43514e9c11e5e3630b" class="toggle"  />
+    <label for="section-493a983c343edf43514e9c11e5e3630b" class="flex justify-between">
+      <a role="button" class="">Cryosamba</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active_projects/cryosamba/paper/" class="">BioArchive</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active_projects/cryosamba/project/" class="">CryoSamba Main</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/active_projects/cryosamba/advanced/" class="">From Scratch(Advanced)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7716aa642ec91bca88029d7c11fbd8b8" class="toggle"  />
+    <label for="section-7716aa642ec91bca88029d7c11fbd8b8" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-39aced8a91bc6b31a6d670db5a5ce798" class="toggle"  />
+    <label for="section-39aced8a91bc6b31a6d670db5a5ce798" class="flex justify-between">
+      <a role="button" class="">Image Recognition</a>
+    </label>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Git Hub</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/github/github/" class="">GitHub</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Nvidia Cuda</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/nvidia-cuda/deeplearningsetup/" class="">NVIDIA GPU and CUDA Setup Guide</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Python</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/production_poetry/" class="">Poetry: Python Dependency Management Made Easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/conda_env/" class="">Using Conda Environment</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/python/python-virtual-environment/" class="active">Using Python Without Breaking Your Local Machine!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Get Started</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-44c7adc40db3ed089d926948e95a1066" class="toggle"  />
+    <label for="section-44c7adc40db3ed089d926948e95a1066" class="flex justify-between">
+      <a role="button" class="">Getting Started at Tklab</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getstarted/gettingstartedattklab/quickstart/" class="">Getting Started with the TKLAB Compute</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getstarted/gettingstartedattklab/slurm/" class="">SLURM for the CPU Cluster</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getstarted/ssh/" class="">Access Resources Directly from Off-site with Key-Based SSH</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getstarted/remote_access/" class="">Remotely Access Machines/Access Compute</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Lab Computing Site</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/labcomputingsite/" class="">Lab Computing Site</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-9bcf71ebb511752b18ff49427dd20961" class="toggle"  />
+    <label for="section-9bcf71ebb511752b18ff49427dd20961" class="flex justify-between">
+      <a role="button" class="">Care</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/care/care/" class="">Lab Computing Site/CARE</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d35f86211aac97dd8c772bdfa9849424" class="toggle"  />
+    <label for="section-d35f86211aac97dd8c772bdfa9849424" class="flex justify-between">
+      <a role="button" class="">Llsm Ao Lls ( Mosaic)</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/" class="">LLSM</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-a98955eae6f10c3e4266a56732f9aa1d" class="toggle"  />
+    <label for="section-a98955eae6f10c3e4266a56732f9aa1d" class="flex justify-between">
+      <a role="button" class="">References</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/references/references/" class="">Websites, References, Githubs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cf9d1b781624480f957fe4d61495c4ba" class="toggle"  />
+    <label for="section-cf9d1b781624480f957fe4d61495c4ba" class="flex justify-between">
+      <a role="button" class="">Tracking</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/tracking/detection_and_tracking/" class="">Detection and Tracking</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/tracking/post-tracking/" class="">Post-tracking Processing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/tracking/lab_view/" class="">Tracks Visualizer - Matlab</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/labcomputingsite/neuroglancer/" class="">Neuroglancer</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Our Compute Capabilities</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/our_compute_capabilities/computation/" class="">Computation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Sbgrid Wiki</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/sbgrid_wiki/sbgrid/" class="">SBGrid Wiki</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Using Python Without Breaking Your Local Machine!</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#virtual-environment">Virtual Environment</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-a-python-virtual-environment">Creating a Python Virtual Environment</a>
+      <ul>
+        <li><a href="#steps-to-create-a-virtual-environment">Steps to Create a Virtual Environment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h2 id="virtual-environment">
+  Virtual Environment
+  <a class="anchor" href="#virtual-environment">#</a>
+</h2>
+<h3 id="explanation">
+  Explanation
+  <a class="anchor" href="#explanation">#</a>
+</h3>
+<p>A virtual environment is like a separate workspace for your code. Imagine you have a desk where you do your work, and on that desk, you have different projects spread out. Each project has its own set of tools, materials, and files.</p>
+<p>Similarly, in programming, a virtual environment is a self-contained space where you can work on different projects without them interfering with each other. It allows you to create an isolated environment with its own set of libraries, dependencies, and configurations.</p>
+<p>Why is this useful? Well, sometimes different projects require different versions of libraries or dependencies. For example, one project might need an older version of a library, while another project requires a newer version. Without a virtual environment, these projects might conflict with each other and cause issues.</p>
+<p>With a virtual environment, you can create a separate workspace for each project, ensuring that the specific versions of libraries and dependencies needed for that project are installed and used. This way, you can work on multiple projects simultaneously without worrying about conflicts or compatibility issues.</p>
+<h3 id="benefits">
+  Benefits
+  <a class="anchor" href="#benefits">#</a>
+</h3>
+<ul>
+<li><strong>Project Isolation</strong>: No interference between projects.</li>
+<li><strong>Version Control</strong>: Maintain different versions of libraries for different projects.</li>
+<li><strong>Easy Collaboration</strong>: Share your environment setup easily with others.</li>
+</ul>
+<h2 id="creating-a-python-virtual-environment">
+  Creating a Python Virtual Environment
+  <a class="anchor" href="#creating-a-python-virtual-environment">#</a>
+</h2>
+<h3 id="steps-to-create-a-virtual-environment">
+  Steps to Create a Virtual Environment
+  <a class="anchor" href="#steps-to-create-a-virtual-environment">#</a>
+</h3>
+<ol>
+<li>
+<p><strong>Install Python</strong>: Make sure Python is installed. Use <code>python3</code> for Python 3.x.</p>
+</li>
+<li>
+<p><strong>Create a Virtual Environment</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -m venv myenv
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Activate the Virtual Environment</strong>:</p>
+<ul>
+<li>
+<h1 id="windows">
+  Windows
+  <a class="anchor" href="#windows">#</a>
+</h1>
+myenv\Scripts\activate</li>
+<li>
+<h1 id="maclinux">
+  Mac/Linux
+  <a class="anchor" href="#maclinux">#</a>
+</h1>
+source myenv/bin/activate</li>
+</ul>
+</li>
+<li>
+<p><strong>Install Packages</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install package_name
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Deactivate the Environment</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>deactivate
+</span></span></code></pre></div></li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#virtual-environment">Virtual Environment</a>
+      <ul>
+        <li><a href="#explanation">Explanation</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+      </ul>
+    </li>
+    <li><a href="#creating-a-python-virtual-environment">Creating a Python Virtual Environment</a>
+      <ul>
+        <li><a href="#steps-to-create-a-virtual-environment">Steps to Create a Virtual Environment</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
