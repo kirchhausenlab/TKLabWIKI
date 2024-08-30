@@ -4,7 +4,9 @@ date: 2024-08-15
 draft: false
 ---
 
-### [Kirchhausenlab GitHub](#https://github.com/kirchhausenlab)
+### [Kirchhausenlab GitHub]
+
+-[Link to GitHub](https://github.com/kirchhausenlab)
 
 All the code and software developed by the Kirchhausen lab can be found on our GitHub page.
 
