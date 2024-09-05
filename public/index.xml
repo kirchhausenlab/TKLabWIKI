@@ -114,6 +114,13 @@
       <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick(stock@tklab.hms.harvard.edu) and Catherine(Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid(help@sbgrid.</description>
     </item>
     <item>
+      <title>Lab Computing and Image Analysis Tools</title>
+      <link>http://localhost:1313/docs/labcomputingsite/care/lab_imaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/care/lab_imaging/</guid>
+      <description>Using Labviewer for Track Observation # Converting Tracked Traces to Labview File # Access MATLAB on tkl1 or tkl3 Open MATLAB Navigate to: scratch → alex_labviewcodes → matlab_tools → microscopy Open the file &amp;ldquo;MicroscopyBrowser_v(highest value).mlapp&amp;rdquo; Click &amp;ldquo;Run&amp;rdquo; at the top Follow the interface from left to right, ending at the bottom: Change folder in left column to the analysis folder containing &amp;ldquo;ProcessedTracks.mat&amp;rdquo; Check all Cat ID in the middle Change folder in right column to the Deskewed data Click the green arrow to load data in the middle For multiple channels, use primary channel at the top and others below At the bottom, change the analysis folder to where you want to save the Labview file Click top left green arrow to load &amp;ldquo;ProcessedTracks.</description>
+    </item>
+    <item>
       <title>Lab Computing Site/CARE</title>
       <link>http://localhost:1313/docs/labcomputingsite/care/care/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
