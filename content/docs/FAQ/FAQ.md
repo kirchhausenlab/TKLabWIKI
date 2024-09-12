@@ -151,29 +151,58 @@ Yes, you can configure branch protection rules on GitHub:
 - ✅ Checked GPU/CPU resource usage, no slowdown encountered.
 
 ---
+### Notes from Team Members
 
-### **Sample Notes from Team Members**
+- **@Ewa Sitarska**  
+  Logging onto a remote machine and running MATLAB scripts.
 
-- **@Ewa Sitarska**
-  - Logging onto remote machine, ran MATLAB scripts.
-- **@Adrian Coscia**
+- **@Adrian Coscia**  
+  No current use for DGXs.  
+  Running MATLAB scripts.
 
-  - No use for DGXs currently.
-  - Running MATLAB scripts.
+- **@Ricky**  
+  The microscope computers can access `scratch` and the datasyncs.  
+  Verified network access using `tkhpc32c` from outside the lab.  
+  Accessed MATLAB and/or Fiji remotely.
 
-- **@Ricky**
+- **@Beren Aylan**  
+  Opened files and ran MATLAB code.  
+  Accessed `Datasync 5` and `scratch` from both workstations.
 
-  - Verified microscope computers can access `scratch` and `datasyncs`.
-  - Checked network access via `tkhpc32c`.
-  - ✅ Accessed MATLAB and Fiji from outside the lab.
+- **@Nicholas Chow**  
+  Remote access to confocal server.  
+  Remote computer to run Fiji scripts.  
+  Dreamspace computers: accessed scratch, ran Fiji and MATLAB codes.
 
-- **@Beren Aylan**
+- **@Anwesha**  
+  **TBD**
 
-  - Opened files, ran MATLAB code.
-  - ✅ Accessed `Datasync 5` and `scratch` from both workstations.
+- **@Anand**  
+  **TBD**
 
-- **@Nicholas Chow**, **@Anwesha**, **@Anand**, **@Bryan Zuniga**, **@Elliott Somerville**, **@Gustavo**, **@Mari De Sautu**
-  - **TBD** (To be filled in by team members)
+- **@Bryan Zuniga**  
+  Access to `scratch`.  
+  Access to `Datasync 5`.
+
+- **@Elliott Somerville**  
+  Usage of Dreamspace computers.  
+  Running MATLAB, Fiji, and Imaris.  
+  Access to data storage spaces (`scratch`, `Datasyncs`).  
+  Running Fiji scripts and MATLAB scripts.
+
+- **@Gustavo**  
+  No use of DGXs.  
+  SSH to `tkl1` to use GPU.  
+  Running MATLAB and Fiji scripts.
+
+- **@Mari De Sautu**  
+  Access to DGXs for denoising.  
+  Running tomograms.
+
+---
+
+Let me know if you need further adjustments or additional sections for the wiki!
+
 
 ---
 
