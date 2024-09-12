@@ -74,6 +74,8 @@
   </url><url>
     <loc>http://localhost:1313/docs/sbgrid_wiki/</loc>
   </url><url>
+    <loc>http://localhost:1313/faq/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/getstarted/ssh/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -83,6 +85,8 @@
     <loc>http://localhost:1313/docs/our_compute_capabilities/computation/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/tracking/detection_and_tracking/</loc>
+  </url><url>
+    <loc>http://localhost:1313/faq/faq/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/active_projects/cryosamba/advanced/</loc>
   </url><url>

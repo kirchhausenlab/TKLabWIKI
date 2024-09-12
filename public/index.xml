@@ -100,6 +100,13 @@
       <description>5. Detection and Tracking # Introduction # The detection and tracking routines are based on methods described in references [1,2].&#xA;Detection:&#xA;The input image is filtered using two separate filters: A detection model to identify pixels with significant signals. A Laplacian-of-Gaussian filter to identify local maxima. Local maxima at significant locations are used to initialize model fitting, which estimates fluorescence signal amplitude, local background, and sub-pixel location [2]. This code is designed for PSF-like particles; intensity estimates are less reliable for extended objects (e.</description>
     </item>
     <item>
+      <title>FAQ</title>
+      <link>http://localhost:1313/faq/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/faq/faq/</guid>
+      <description>FAQ: Freezing a Fork at a Specific Commit # This FAQ explains how to fork a repository at a specific commit and ensure that it doesn&amp;rsquo;t get updated in the future.&#xA;1. How do I fork a repository? # To fork a repository on GitHub:&#xA;Navigate to the repository you want to fork. Click the Fork button in the top-right corner. A copy of the repository will now appear under your GitHub account.</description>
+    </item>
+    <item>
       <title>From Scratch(Advanced)</title>
       <link>http://localhost:1313/docs/active_projects/cryosamba/advanced/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
