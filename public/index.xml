@@ -101,10 +101,10 @@
     </item>
     <item>
       <title>FAQ</title>
-      <link>http://localhost:1313/faq/faq/</link>
+      <link>http://localhost:1313/docs/faq/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/faq/faq/</guid>
-      <description>FAQ: Freezing a Fork at a Specific Commit # This FAQ explains how to fork a repository at a specific commit and ensure that it doesn&amp;rsquo;t get updated in the future.&#xA;1. How do I fork a repository? # To fork a repository on GitHub:&#xA;Navigate to the repository you want to fork. Click the Fork button in the top-right corner. A copy of the repository will now appear under your GitHub account.</description>
+      <guid>http://localhost:1313/docs/faq/faq/</guid>
+      <description>Table of Contents # 1. Freezing a fork for a specific commit to prevent code from being outdate or broken&#xA;2. Documenting Your work after a Security Update&#xA;FAQ: Freezing a Fork at a Specific Commit # This FAQ explains how to fork a repository at a specific commit and ensure that it doesn&amp;rsquo;t get updated in the future.&#xA;1. How do I fork a repository? # To fork a repository on GitHub:</description>
     </item>
     <item>
       <title>From Scratch(Advanced)</title>

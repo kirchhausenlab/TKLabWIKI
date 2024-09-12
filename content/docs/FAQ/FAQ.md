@@ -201,7 +201,6 @@ Yes, you can configure branch protection rules on GitHub:
 
 ---
 
-Let me know if you need further adjustments or additional sections for the wiki!
 
 
 ---
