@@ -3,7 +3,7 @@ title: "Our Compute Capabilities and what they are used for"
 draft: false
 ---
 
---
+## The Kirchhausen lab has a variety of computational resources available for use. These resources are used for a wide range of tasks, including data analysis, image processing, and machine learning. Below is an overview of the lab's compute capabilities and how they are used.
 
 # Our Compute Capabilities
 
@@ -84,3 +84,7 @@ DGX2 is exclusively for the TKLAB while Steve's lab uses DGX1 and DGX3 from time
 | /nfs/datasync4                       | CLSB     | 336 TB                                | LLSM/AO-LLSM Backup from 04-22          |
 | /nfs/datasync5                       | CLSB     | 336 TB                                | LLSM/AO-LLSM Backup from 04-22          |
 | /nfs/datasync6                       | CLSB     | 336 TB                                | LLSM/AO-LLSM Backup from 04-22          |
+
+## Software Package
+
+The software can be found in the folder /nfs/scratch/Gokul/GU_Repository, and on our GitHub (also available at this link https://github.com/francois-a/llsmtools). All software runs under Matlab, unless stated otherwise.
