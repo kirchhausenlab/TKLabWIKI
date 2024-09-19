@@ -15,17 +15,15 @@
   </url><url>
     <loc>http://localhost:1313/docs/active_projects/care/</loc>
   </url><url>
+    <loc>http://localhost:1313/docs/active_projects/care/care/</loc>
+  </url><url>
     <loc>http://localhost:1313/docs/active_projects/image_recognition/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/getstarted/gettingstartedattklab/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/care/</loc>
-  </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/references/</loc>
-  </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/tracking/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
@@ -84,7 +82,7 @@
   </url><url>
     <loc>http://localhost:1313/docs/our_compute_capabilities/computation/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/tracking/detection_and_tracking/</loc>
+    <loc>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/detection_and_tracking/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/faq/faq/</loc>
   </url><url>
@@ -92,15 +90,15 @@
   </url><url>
     <loc>http://localhost:1313/docs/getstarted/gettingstartedattklab/quickstart/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/care/lab_imaging/</loc>
+    <loc>http://localhost:1313/docs/active_projects/care/care/lab_imaging/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/care/care/</loc>
+    <loc>http://localhost:1313/docs/active_projects/care/care/care/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/llsm/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/neuroglancer/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/tracking/post-tracking/</loc>
+    <loc>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/post-tracking/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/getstarted/remote_access/</loc>
   </url><url>
@@ -112,7 +110,7 @@
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/labcomputingsite/tracking/lab_view/</loc>
+    <loc>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/lab_view/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/labcomputingsite/references/references/</loc>
   </url>

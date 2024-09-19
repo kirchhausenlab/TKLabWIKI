@@ -9,13 +9,6 @@
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lab Computing Site</title>
-      <link>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/labcomputingsite/</guid>
-      <description>Lab Computing Site # For more information on the lab computing site, please visit the TKLAB Computing Site.</description>
-    </item>
-    <item>
       <title>ASEM</title>
       <link>http://localhost:1313/docs/active_projects/asem/project/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
@@ -86,17 +79,10 @@
       <description>CPU Information # Run the following command to get information about the CPU:&#xA;lscpu | grep -e &amp;#34;^CPU(s)&amp;#34; -e &amp;#34;Thread(s)&amp;#34; -e &amp;#34;Core(s)&amp;#34; -e &amp;#34;Socket(s)&amp;#34; -e &amp;#34;^CPU family&amp;#34; -e &amp;#34;Model&amp;#34; -e &amp;#34;Model name&amp;#34; -e &amp;#34;cache&amp;#34; GPU Information # Run the following command to get information about the GPU:&#xA;nvidia-smi --query-gpu=index,utilization.gpu,memory.free,memory.total,memory.used --format=csv nvidia-smi -L System Information # Run the following command to get information about the system:&#xA;free -h Disk Information # Run the following command to get information about the disk:</description>
     </item>
     <item>
-      <title>Computation</title>
-      <link>http://localhost:1313/docs/our_compute_capabilities/computation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/our_compute_capabilities/computation/</guid>
-      <description>Our Compute Capabilities # Summary of the compute capabilities of our lab&amp;rsquo;s systems:&#xA;System CPU(s) Thread(s) per core Core(s) per socket Socket(s) CPU Family Model Memory GPU Disk NVIDIA DGX A100 256 2 64 2 23 49 2.0Ti 8 x NVIDIA A100-SXM4-40GB 91G / 1.8T TKL1 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL2 32 2 8 2 6 85 502Gi 1 x Quadro RTX 8000 / TKL3 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL4 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKhpc 64 2 8 4 6 62 503Gi 1 x Quadro K6000 / Excluding the NVIDIA DGX A100, we have a total of 192 CPUs CORES, with 8 cores per socket and 2 threads per core.</description>
-    </item>
-    <item>
       <title>Detection and Tracking</title>
-      <link>http://localhost:1313/docs/labcomputingsite/tracking/detection_and_tracking/</link>
+      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/detection_and_tracking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/tracking/detection_and_tracking/</guid>
+      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/detection_and_tracking/</guid>
       <description>5. Detection and Tracking # Introduction # The detection and tracking routines are based on methods described in references [1,2].&#xA;Detection:&#xA;The input image is filtered using two separate filters: A detection model to identify pixels with significant signals. A Laplacian-of-Gaussian filter to identify local maxima. Local maxima at significant locations are used to initialize model fitting, which estimates fluorescence signal amplitude, local background, and sub-pixel location [2]. This code is designed for PSF-like particles; intensity estimates are less reliable for extended objects (e.</description>
     </item>
     <item>
@@ -121,17 +107,24 @@
       <description>Getting Started # Starter Page&#xA;Request Access # Welcome to TKlab. In order to access our online resources, a formal request needs to be filed by Patrick(stock@tklab.hms.harvard.edu) and Catherine(Catherine.Swan@childrens.harvard.edu). You will receive an email with instructions to activate your xtal200 account. You will be able to access the on-site machines in the dreamspace using your network account credentials. Please report any issues with the network in a timely manner contacting SBgrid(help@sbgrid.</description>
     </item>
     <item>
-      <title>Lab Computing and Image Analysis Tools</title>
-      <link>http://localhost:1313/docs/labcomputingsite/care/lab_imaging/</link>
+      <title>Hardware Quanitification of Compute</title>
+      <link>http://localhost:1313/docs/our_compute_capabilities/details_of_compute/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/care/lab_imaging/</guid>
+      <guid>http://localhost:1313/docs/our_compute_capabilities/details_of_compute/</guid>
+      <description>Specifics for each machine # CPU Information # - CPU(s): 256 - Thread(s) per core: 2 - Core(s) per socket: 64 - Socket(s): 2 - CPU Family: 23 - Model: 49 Memory Information # - L1d Cache: 4 - L1i Cache: 4 - L2 Cache: 64 - L3 Cache: 512 GPU Information # - GPU: GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-dea86db9-8b18-0785-912e-0cd7c365ebdd) GPU 1: NVIDIA A100-SXM4-40GB (UUID: GPU-4fbb6ffc-aa85-14bc-5dc6-6f4078927b72) GPU 2: NVIDIA A100-SXM4-40GB (UUID: GPU-91964961-3010-9dbc-262e-0a383a42e457) GPU 3: NVIDIA A100-SXM4-40GB (UUID: GPU-1ee21c93-0fbe-31fc-82f2-fbb6e0291e7a) GPU 4: NVIDIA A100-SXM4-40GB (UUID: GPU-712321e3-5a60-95f8-0762-d8e1017239d0) GPU 5: NVIDIA A100-SXM4-40GB (UUID: GPU-ff394415-d24d-8b0a-bb56-80a667851ca3) GPU 6: NVIDIA A100-SXM4-40GB (UUID: GPU-3b8e3a00-cb2f-4d61-8223-cd1aac7f6f1c) GPU 7: NVIDIA A100-SXM4-40GB (UUID: GPU-13c54766-2328-c07d-455d-47ce4766928b) - GPU Utilization: 100,100,100,99,100,100,0,0, - Total Memory: 2.</description>
+    </item>
+    <item>
+      <title>Lab Computing and Image Analysis Tools</title>
+      <link>http://localhost:1313/docs/active_projects/care/care/lab_imaging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/active_projects/care/care/lab_imaging/</guid>
       <description>Using Labviewer for Track Observation # Converting Tracked Traces to Labview File # Access MATLAB on tkl1 or tkl3 Open MATLAB Navigate to: scratch → alex_labviewcodes → matlab_tools → microscopy Open the file &amp;ldquo;MicroscopyBrowser_v(highest value).mlapp&amp;rdquo; Click &amp;ldquo;Run&amp;rdquo; at the top Follow the interface from left to right, ending at the bottom: Change folder in left column to the analysis folder containing &amp;ldquo;ProcessedTracks.mat&amp;rdquo; Check all Cat ID in the middle Change folder in right column to the Deskewed data Click the green arrow to load data in the middle For multiple channels, use primary channel at the top and others below At the bottom, change the analysis folder to where you want to save the Labview file Click top left green arrow to load &amp;ldquo;ProcessedTracks.</description>
     </item>
     <item>
       <title>Lab Computing Site/CARE</title>
-      <link>http://localhost:1313/docs/labcomputingsite/care/care/</link>
+      <link>http://localhost:1313/docs/active_projects/care/care/care/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/care/care/</guid>
+      <guid>http://localhost:1313/docs/active_projects/care/care/care/</guid>
       <description>CARE Installation Guide # Overview # The Content-Aware image REstoration (CARE) package is a Python-based routine for data augmentation and image restoration. The following steps outline the installation process and how to set up your environment for running CARE on the lab&amp;rsquo;s GPU machines.&#xA;Installation Steps # Create a Working Directory:&#xA;Open your terminal and create a new folder for CARE.&#xA;cd ~ mkdir care cd care Create and Activate a Conda Environment:</description>
     </item>
     <item>
@@ -149,10 +142,17 @@
       <description>Neuroglancer # Purpose # Neuroglancer is a powerful tool for viewing FIBSEM raw data, as well as labels and predictions generated by deep learning pipelines. Developed by Google, it offers multiple options for visualizing datasets through a web interface, Python API, and command line tools.&#xA;While general usage tutorials are available online, this document will focus on two specific cases:&#xA;Sharing a Neuroglancer link with volumes stored in AWS. Sharing a Neuroglancer link with volumes located on TK computers.</description>
     </item>
     <item>
-      <title>Post-tracking Processing</title>
-      <link>http://localhost:1313/docs/labcomputingsite/tracking/post-tracking/</link>
+      <title>Our Compute Capabilities and what they are used for</title>
+      <link>http://localhost:1313/docs/our_compute_capabilities/computation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/tracking/post-tracking/</guid>
+      <guid>http://localhost:1313/docs/our_compute_capabilities/computation/</guid>
+      <description>&amp;ndash;&#xA;Our Compute Capabilities # Summary of the compute capabilities of our lab&amp;rsquo;s systems:&#xA;System CPU(s) Thread(s) per core Core(s) per socket Socket(s) CPU Family Model Memory GPU Disk NVIDIA DGX A100 256 2 64 2 23 49 2.0Ti 8 x NVIDIA A100-SXM4-40GB 91G / 1.8T TKL1 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL2 32 2 8 2 6 85 502Gi 1 x Quadro RTX 8000 / TKL3 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKL4 32 2 8 2 6 85 502Gi 3 x Quadro RTX 8000 / TKhpc 64 2 8 4 6 62 503Gi 1 x Quadro K6000 / Excluding the NVIDIA DGX A100, we have a total of 192 CPUs CORES, with 8 cores per socket and 2 threads per core.</description>
+    </item>
+    <item>
+      <title>Post-tracking Processing</title>
+      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/post-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/post-tracking/</guid>
       <description>7. Post-tracking Processing # Introduction # In this section, we provide a list of codes developed for post-tracking analysis. The following procedures outline how to back up data from the scratch directory to /nfs/datasync4 and various post-processing techniques applied to the tracked data.&#xA;Data Backup After Processing # Name of the code: transfer_from_scratch_to_datasync.m&#xA;Once the data collected by the LLSMs has been deskewed and stored temporarily on /datasync4/tklab-llsm or /datasync4/AO-llsm, users can begin their processing, which includes detection, tracking, and post-tracking analysis.</description>
     </item>
     <item>
@@ -185,9 +185,9 @@
     </item>
     <item>
       <title>Tracks Visualizer - Matlab</title>
-      <link>http://localhost:1313/docs/labcomputingsite/tracking/lab_view/</link>
+      <link>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/lab_view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/labcomputingsite/tracking/lab_view/</guid>
+      <guid>http://localhost:1313/docs/labcomputingsite/llsm_ao-lls_mosaic/lab_view/</guid>
       <description>8. Tracks Visualizer - Matlab # Introduction # Visualizing 3D data can be challenging, but several tools are available to help browse data and tracks effectively. These tools allow users to view 2D projections of the data in XY, XZ, and YZ planes, facilitating easier analysis of tracked data.&#xA;Tools and Commands # Commands:&#xA;GU_calcImageProjections.m GU_cme3d2dViewer.m Usage:&#xA;Load and Project Data:&#xA;Use the following commands to load the 3D data and calculate the 2D projections:</description>
     </item>
     <item>
