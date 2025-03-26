@@ -15,6 +15,8 @@ type: docs
 3. [Inference](#inference)
    - [Setup Inference](#setup-inference) 🛠️
    - [Run Inference](#run-inference) 🚀
+4. [SBGrid](#SBGrid)
+   - [Run from SBGrid]
 
 ## Installation
 
@@ -215,3 +217,10 @@ Explanation of parameters:
    Adjust `--nproc_per_node` to change the number of GPUs. Use `--seed 1234` for reproducibility.
 3. To interrupt inference, press `CTRL + C`. You can resume or start from scratch if prompted.
 4. The final denoised volume will be located at `/path/to/dir/runs/exp-name/inference`. It will be either a file named `result.tif`, `result.mrc`, `result.rec` or a folder named `result`.
+
+### SBGrid
+
+1. To run CryoSamba from SBGrid, you need to have the SBGrid environment installed on your machine.
+2. Run `source /programs/sbgrid.shrc` everytime you open a new terminal window.
+3. Get all CryoSamba commands by running `sbgrid-list cryosamba`.
+4. Link to CryoSamba docs: [https://sbgrid.org/software/titles/cryosamba](https://sbgrid.org/software/titles/cryosamba)
